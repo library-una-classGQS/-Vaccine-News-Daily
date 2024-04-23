@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+</html>
+
+<body>
+    <header>
+        <img src="../img/cruz.png" /> <a class="titulo">
+            <h1>Vaccine News Daily</h1>
+        </a>
+    </header>
+    <input type="checkbox" id="chec">
+    <label class="menu" for="chec">
+        <img src="../img/menu.png" />
+    </label>
+
+    <nav>
+        <ul>
+            <li><a class="amenu" href="index.html">Inicio</a></li>
+            <li><a class="amenu" href="noticias.html">Noticias</a></li>
+            <li>
+                <a class="amenu" href="#" id="categorias">Categorias</a>
+                <ul class="submenu" id="submenu-categorias">
+                    <li><a href="categoria-vacina-covid-19.html">Vacina COVID-19</a></li>
+                    <li><a href="categoria-vacina-gripe.html">Vacina da Gripe</a></li>
+                    <li><a href="categoria-vacina-hepatite.html">Vacina da Hepatite</a></li>
+                    <li><a href="categoria-vacina-varicela.html">Vacina da Varicela</a></li>
+                    <li><a href="categoria-outros.html">Outras</a></li>
+                </ul>
+            </li>
+            <li><a class="amenu" href="cuidados.html">Cuidados</a></li>
+            <li><a class="amenu" href="contato.html">Ajuda</a></li>
+        </ul>
+
+
+        <script src="../js/email.js"></script>
+        </nav>
+        <main>
+            <h2>Envie sua mensagem</h2>
+            <form id="email-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+
+            <script src="../js/email.js"></script>
+
+
+        </main>
+        <footer>
+
+        </footer>
+</body>

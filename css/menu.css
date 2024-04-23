@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: 18px;
+}
+
+body{
+    font-family: arial;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;
+    margin-top: 20px;
+}
+ 
+nav{
+    background-color: #90ee90;
+    width: 200px;
+    height: 100%;
+    left: -200px;
+    position: absolute;
+    transition: all .5s;
+    z-index: 2;
+    position: fixed;
+    TOP: 10px;
+}   
+
+input[type="checkbox"]:checked ~nav{
+    transform: translateX(200px); 
+}
+
+ul{
+    top: 100px;
+    position: absolute;
+    width: 100%;
+}
+
+.amenu{
+    display:block;
+    padding: 15px 5px;
+    color: #333;
+}
+
+
+
+
+.amenu:hover{
+    background-color: #3CB371;
+    color: white;
+  /*  background-color: rgb(176, 224,230) ;
+    color: black; */
+}
+
+.menu{
+    padding: 15px;
+    position: absolute;
+    z-index: 5;
+    top: 60px;
+    position: fixed;
+}
+
+
+
+
+
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #90ee90;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.amenu:hover.submenu {
+    display: block;
+}
+
+.submenu li {
+    margin-bottom: 10px;
+}
+
+.submenu a {
+    color: #333;
+}
+
+.submenu a:hover {
+    background-color: #3CB371;
+    color: white;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu.show {
+    display: block;
+}
+
+
+
+/*
+
+nav {
+    background-color: #90ee90;
+    width: 200px;
+    position: absolute;
+    left: -200px;
+    transition: left .5s;
+    z-index: 2;
+    top: 60px;
+}
+
+nav.show {
+    left: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+}
+*/
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #90ee90;
+    border: 1px solid #ccc;
+}
+
+.submenu.show {
+    display: block;
+}
+
+.amenu:hover + .submenu {
+    display: block;
+}
