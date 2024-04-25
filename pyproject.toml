@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "vaccine-news-daily"
+version = "0.1.0"
+description = ""
+authors = ["Amigos da Mila"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Flask = "^3.0.3"
+Flask-SQLAlchemy = "^3.1.1"
+Flask-MySQL = "^1.5.2"
+mysql-connector-python = "^8.3.0"
+mysql-client = "^0.0.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.1"
+isort = "^5.13.2"
+mypy = "^1.10.0"
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
