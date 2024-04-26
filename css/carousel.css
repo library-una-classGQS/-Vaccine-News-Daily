@@ -1,5 +1,5 @@
 .slider{
-    margin-left: 50px;
+    margin-left: 320px;
     width: 800px;
     height: 400px;
     overflow: hidden;
@@ -103,4 +103,11 @@ slide img{
 
 .img-slides{
     width: 800px;
+}
+
+.todo-slide{
+    background-color: rgba(16, 16, 16, .5);
+    margin-top: -20px;
+    width: 1430px;
+    margin-left: -220px;
 }
