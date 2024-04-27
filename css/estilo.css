@@ -227,4 +227,70 @@ footer {
 
 
 
-  
+  /* suporte*/
+.support-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.support-button:hover {
+  background-color: #2E865F;
+}
+
+.support-chat {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #2E865F;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  overflow-y: auto;
+  color: #fff;
+}
+
+.support-chat h2 {
+  margin-top: 0;
+}
+
+.support-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.send-button {
+  background-color: #3CB371;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #2E865F;
+}
+
+.support-messages {
+  padding: 10px;
+}
+
+
+.campo-digitar{
+  margin-top: 250px;
+  position: absolute;
+
+}
+
+
+  /* fimn suporte*/
