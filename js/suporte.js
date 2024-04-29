@@ -6,7 +6,13 @@ const sendButton = document.getElementById('send-button');
 const supportMessages = document.getElementById('support-messages');
 
 supportButton.addEventListener('click', () => {
+ if(supportChat.style.display == 'none'){
   supportChat.style.display = 'block';
+ }else{
+  supportChat.style.display = 'none';
+ }
+
+  
 });
 
 sendButton.addEventListener('click', () => {
