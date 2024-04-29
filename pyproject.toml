@@ -9,15 +9,14 @@ readme = "README.md"
 python = "^3.12"
 Flask = "^3.0.3"
 Flask-SQLAlchemy = "^3.1.1"
-Flask-MySQL = "^1.5.2"
-mysql-connector-python = "^8.3.0"
 mysql-client = "^0.0.1"
+Flask-MySQL = "^1.5.2"
 
 [tool.poetry.group.dev.dependencies]
-black = "^24.4.2"
 isort = "^5.13.2"
-mypy = "^1.9.0"
-pytest = "^8.1.1"
+black = "24.4.2"
+mypy = "^1.10.0"
+pytest = "^8.2.0"
 
 [build-system]
 requires = ["poetry-core"]
