@@ -1,13 +1,13 @@
 {% extends "template.html" %}
-{% block conteudo %}
+{% block conteudo_header %}
 <form id="search-form">
   <input type="search" id="search-input" placeholder="Pesquisar...">
   <button id="search-button">Pesquisar</button>
   <ul id="search-results"></ul>
 </form>
+
 <a class="img_login"><img src="{{ url_for('static', filename='img/login.com' )}}" alt=""></a>
 <div id="login-form" class="login-form">
-
   <form>
     <label for="username">Usuário:</label><br>
     <input type="text" id="username" name="username"><br>
@@ -28,9 +28,10 @@
     }
   });
 </script>
+{% endblock %}
 
 
-
+{% block conteudo_body %}
 <main>
 <div class="todo-slide">
     <div class="slider">

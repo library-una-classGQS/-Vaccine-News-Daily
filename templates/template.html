@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/carousel.css') }}">
+    <title>{{ titulo }}</title>
 </head>
 <body>
     <header>
@@ -15,6 +16,8 @@
         <a href="{{ url_for('index') }}" class="titulo">
             <h1>Vaccine News Daily</h1>
         </a>
+        {% block conteudo_header %}
+        {% endblock %}
     </header>
 
     <input type="checkbox" id="chec">
@@ -43,7 +46,8 @@
         <script src="../static/js/email.js"></script>
     </nav>
 
-    {% block conteudo %} {% endblock %}
+    {% block conteudo_body %}
+    {% endblock %}
     <footer></footer>
 </body>
 </html>
