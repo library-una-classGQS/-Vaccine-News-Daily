@@ -1,15 +1,18 @@
 // Adicione o seguinte código ao seu JavaScript
 const supportButton = document.getElementById('support-button');
 const supportChat = document.getElementById('support-chat');
+const todotChat = document.getElementById('todo-chat');
 const supportInput = document.getElementById('support-input');
 const sendButton = document.getElementById('send-button');
 const supportMessages = document.getElementById('support-messages');
 
 supportButton.addEventListener('click', () => {
- if(supportChat.style.display == 'none'){
+ if(todotChat.style.display == 'none'){
   supportChat.style.display = 'block';
+  todotChat.style.display = 'block';
  }else{
   supportChat.style.display = 'none';
+  todotChat.style.display = 'none';
  }
 
   

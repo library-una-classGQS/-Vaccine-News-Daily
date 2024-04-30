@@ -250,20 +250,37 @@ footer {
   border: 1px solid #ccc;
   padding: 10px;
   width: 300px;
-  height: 400px;
+  height: 350px;
   overflow-y: auto;
-  color: #fff;
+  color: #fff; 
+  top: 250px;
 }
 
 .support-chat h2 {
   margin-top: 0;
+  margin-left: 90px;
 }
 
 .support-input {
   width: 100%;
+  margin-left: 2px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
+}
+.send-message{
+  z-index: 10;
+  position: absolute;
+  position: fixed;
+  background-color: #2E865F;
+  left: 1103.5px;
+  width: 298.5px;         
+  margin-top: 120px;  
+  
+}
+.todo-chat{
+  margin-left: 900px;
+  display: none;
 }
 
 .send-button {
@@ -281,11 +298,11 @@ footer {
 
 .support-messages {
   padding: 10px;
+
 }
 
 
 .campo-digitar{
-  margin-top: 250px;
   position: absolute;
 
 }
