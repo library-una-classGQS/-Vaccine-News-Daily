@@ -90,6 +90,8 @@ footer {
 
 .article{
   margin-top: 100px;
+  width: 600px;
+  margin-left: -60px;
 
 }
 
@@ -100,18 +102,29 @@ footer {
 
 }
 
+.noticia_maior{
+  position: absolute;
+  width: 500px;
+margin-top: -800px;
+margin-left: 650px;
+}
+.img_noticia_maior{
+  width: 500px;
+  margin-left: -20px;
+}
+
 .t_categorias{
   margin-left: 0;
   margin-top: 60px;
 }
 
 .img_noticias{
-  width: 300px;
+  width: 200px;
 
 }
 .txt_noticias{
   position: relative;
-  margin-left: 300px;
+  margin-left: 220px;
   margin-top: -150PX;
 }
 
@@ -290,3 +303,10 @@ overflow-y:auto;
 
 
 /* fimn suporte*/
+
+
+.titulo_noticias{
+  color: #2E865F;
+  margin-left: 400px;
+  margin-top: 20px;
+}
