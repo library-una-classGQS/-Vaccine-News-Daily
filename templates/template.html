@@ -28,21 +28,10 @@
     <nav>
         <ul>
             <li><a class="amenu" href="{{ url_for('index') }}">Inicio</a></li>
-             <!--  
-            <li><a class="amenu" href="{{ url_for('noticias') }}">Noticias</a></li>
-         <li>
-                <a class="amenu" href="#" id="categorias">Categorias</a>
-                <ul class="submenu" id="submenu-categorias">
-                    <li><a href="categoria-vacina-covid-19.html">Vacina COVID-19</a></li>
-                    <li><a href="categoria-vacina-gripe.html">Vacina da Gripe</a></li>
-                    <li><a href="categoria-vacina-hepatite.html">Vacina da Hepatite</a></li>
-                    <li><a href="categoria-vacina-varicela.html">Vacina da Varicela</a></li>
-                    <li><a href="categoria-outros.html">Outras</a></li>
-                </ul>
-            </li>
-            -->
-            <li><a class="amenu" href="cuidados.html">Cuidados</a></li>
-            <li><a class="amenu" href="contato.html">Ajuda</a></li>
+            <li><a class="amenu" href="{{ url_for('cuidados') }}">Cuidados</a></li>
+            <li><a class="amenu" href="{{ url_for('contato') }}">Ajuda</a></li>
+            <li><a class="amenu" href="{{ url_for('sobre') }}">Sobre</a></li>
+        
         </ul>
 
         <script src="../static/js/email.js"></script>

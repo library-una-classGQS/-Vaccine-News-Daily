@@ -5,15 +5,22 @@ import os
 path = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)
 
-
 @app.route('/')
 def index():
     return render_template('index.html', titulo='Vaccine News | Home')
 
 
-@app.route('/noticias')
-def noticias():
-    return render_template('noticias.html', titulo='Noticias')
+@app.route('/contato')
+def contato():
+    return render_template('contato.html', titulo='Ajuda')
+
+@app.route('/cuidados')
+def cuidados():
+    return render_template('cuidados.html', titulo='Cuidados')
+
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html', titulo='Sobre')
 
 
 if __name__ == '__main__':
