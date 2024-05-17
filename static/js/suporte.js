@@ -21,6 +21,9 @@ sendButton.addEventListener('click', () => {
     const messageHTML = `<p>${message}</p>`;
     supportMessages.innerHTML += messageHTML;
     supportInput.value = '';
+    // Seu script JavaScript para rolar automaticamente para a última mensagem
+var messages = document.getElementById("support-messages");
+messages.scrollTop = messages.scrollHeight;
   }
 });
 
