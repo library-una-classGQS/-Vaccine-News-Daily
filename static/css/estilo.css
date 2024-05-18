@@ -310,3 +310,110 @@ overflow-y:auto;
   margin-left: 400px;
   margin-top: 20px;
 }
+
+/*formulario da pagina ajuda*/
+.btn_enviarmsg{
+background-color: #3CB371;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 12px;
+cursor: pointer;
+
+}
+
+.btn_enviarmsg:hover {
+  background-color: #2E865F;
+  }
+
+  .email-div{
+
+    background-color:	#90EE90;
+    position: center;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin-bottom: -64.5px;
+    margin-left: 300px;
+  }
+
+ .email-form{
+  margin-top: 30px;
+  margin-left: 60px;
+  position: absolute;
+  width: 250px;
+ }
+
+ .email-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  }
+.h2_email{
+  margin-left: 380px;
+}
+
+/*tela sobre*/
+
+.quem_somos{
+  background-color: #90EE90;
+  width: 500px;
+  height: 260px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.quem_somos h2{
+  color: #2E865F;
+  margin-left: 40px;
+}
+
+.img_vacina{
+  margin-left: 540px;
+  width: 500px;
+  border-radius: 20px;
+  position: absolute;
+  margin-top: -280px;
+}
+
+.juntar-se{
+
+  background-color: #90EE90;
+  width: 500px;
+  height: 260px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  margin-left: 540px;
+  margin-top: -160px;
+
+}
+
+.juntar-se h2{
+
+  color: #2E865F;
+  margin-left: 40px;
+}
+
+#missao{
+  margin-bottom: -200px;
+}
+
+.missao{
+  background-color: #90EE90;
+  width: 500px;
+  height: 260px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: -100px;
+  font-size: 18px;
+}
+
+.missao h2{
+  color: #2E865F;
+  margin-left: 40px;
+}
