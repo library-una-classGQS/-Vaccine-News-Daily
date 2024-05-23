@@ -353,6 +353,7 @@ cursor: pointer;
 .h2_email{
   margin-left: 380px;
 }
+/*fim do formulario*/
 
 /*tela sobre*/
 
@@ -404,7 +405,7 @@ cursor: pointer;
 }
 
 .missao{
-  background-color: #90EE90;
+  background-color: #62f3c4;
   width: 500px;
   height: 260px;
   border-radius: 20px;
@@ -416,4 +417,114 @@ cursor: pointer;
 .missao h2{
   color: #2E865F;
   margin-left: 40px;
+}
+
+/*Fim da tela sobre*/
+
+/*perguntas frequentes */
+
+.faq-container {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 640px;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background: #90EE90;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: #2E865F;
+}
+
+.faq-answer {
+  background: #f1f1f1;
+  padding: 15px;
+  display: none;
+  border-top: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+/*fim perguntas frequentes */
+
+/* div de dowload do pdf */
+
+.container {
+  text-align: center;
+  width: 500px;
+  margin-left: 660px;
+  position: absolute;
+  margin-top: -600px;
+
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #90EE90;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #2E865F;
+}
+
+.testos_sobre{
+  max-width: 460px;
+  margin-left: 10px;
+
+}
+
+
+/* pesquisa */
+
+
+#message {
+  margin-top: 20px;
+  color: red;
+}
+
+#search-results {
+  list-style-type: none;
+  padding: 0;
+}
+
+#search-results li {
+  margin: 10px 0;
+}
+
+#search-results a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+#search-results a:hover {
+  text-decoration: underline;
 }

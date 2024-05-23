@@ -16,8 +16,34 @@
         <a href="{{ url_for('index') }}" class="titulo">
             <h1>Vaccine News Daily</h1>
         </a>
-        {% block conteudo_header %}
-        {% endblock %}
+        <form id="search-form">
+            <input type="search" id="search-input" placeholder="Pesquisar...">
+            <button id="search-button">Pesquisar</button>
+            <ul id="search-results"></ul>
+          </form>
+          
+          <a class="img_login"><img src="{{ url_for('static', filename='img/login.com' )}}" alt=""></a>
+          <div id="login-form" class="login-form">
+            <form>
+              <label for="username">Usuário:</label><br>
+              <input type="text" id="username" name="username"><br>
+              <label for="password">Senha:</label><br>
+              <input type="password" id="password" name="password"><br>
+              <input type="submit" value="Entrar">
+              <a class="inscrever" href="inscrever.html"> Inscreva-se</a>
+            </form>
+          </div>
+          
+          <script>
+            document.querySelector('.img_login').addEventListener('click', function () {
+              var loginForm = document.querySelector('.login-form');
+              if (loginForm.style.display === 'none' || loginForm.style.display === '') {
+                loginForm.style.display = 'block';
+              } else {
+                loginForm.style.display = 'none';
+              }
+            });
+          </script>
     </header>
 
     <input type="checkbox" id="chec">
@@ -31,7 +57,6 @@
             <li><a class="amenu" href="{{ url_for('cuidados') }}">Cuidados</a></li>
             <li><a class="amenu" href="{{ url_for('contato') }}">Ajuda</a></li>
             <li><a class="amenu" href="{{ url_for('sobre') }}">Sobre</a></li>
-        
         </ul>
 
         <script src="../static/js/email.js"></script>
