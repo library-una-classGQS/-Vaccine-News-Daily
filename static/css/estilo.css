@@ -241,6 +241,41 @@ margin-left: 650px;
 
 
 /* suporte*/
+
+
+.user-bubble {
+  display: inline-block;
+  background-color: #3CB371;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+
+.support-bubble {
+  display: inline-block;
+  background-color: #2E865F;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.user-text,
+.support-text {
+  display: inline-block;
+  background-color: #3CB371;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+
 .support-button {
 position: fixed;
 bottom: 20px;
@@ -262,10 +297,9 @@ right: 20px;
 background-color: #2E865F;
 border: 1px solid #ccc;
 padding: 10px;
-width: 300px;
+width: 320px;
 height: 400px;
 overflow-y: auto;
-color: #fff;
 }
 
 .support-chat h2 {
@@ -273,7 +307,7 @@ margin-top: 0;
 }
 
 .support-input {
-width: 100%;
+width: 70%;
 padding: 10px;
 font-size: 16px;
 border: 1px solid #ccc;
@@ -312,6 +346,7 @@ overflow-y:auto;
 }
 
 /*formulario da pagina ajuda*/
+
 .btn_enviarmsg{
 background-color: #3CB371;
 color: #fff;
@@ -527,4 +562,24 @@ h1 {
 
 #search-results a:hover {
   text-decoration: underline;
+}
+
+
+/*pesquisa*/
+#search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+#search-results li {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+#search-results li a {
+  color: #333;
+  text-decoration: none;
 }
