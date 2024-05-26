@@ -498,9 +498,24 @@ h1 {
   border-top: 1px solid #ccc;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  position: relative;
+  max-height: 400px;
+}
+.faq-answerul{
+  background: #f1f1f1;
+  padding: 15px;
+  display: none;
+  border-top: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  height: 320px;
 }
 
-
+.faq-answer ul{
+  position: absolute;
+  margin-top: -90px;
+}
 
 /*fim perguntas frequentes */
 
@@ -511,7 +526,7 @@ h1 {
   width: 500px;
   margin-left: 660px;
   position: absolute;
-  margin-top: -600px;
+  margin-top: -300px;
 
 }
 
