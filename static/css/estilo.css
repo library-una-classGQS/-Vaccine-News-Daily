@@ -31,10 +31,11 @@ header {
 
 }
 
-header h1 {
+.header h1 {
   margin: 0;
   font-size: 1.5rem;
 }
+
 
 .titulo{
   position: absolute;
@@ -329,11 +330,12 @@ background-color: #2E865F;
 .support-messages {
 padding: 10px;
 height: 300px;
-
 position: relative;
 overflow-y:auto;
 
 }
+
+
 
 
 /* fimn suporte*/
@@ -468,6 +470,7 @@ cursor: pointer;
 }
 .img{
   margin-top: 40px;
+  
 }
 
 .imagens {
@@ -490,6 +493,8 @@ cursor: pointer;
   color: #2E865F;
   margin-left: 45%;
 }
+
+
 
 /*Fim da tela sobre*/
 
