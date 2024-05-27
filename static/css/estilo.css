@@ -454,6 +454,43 @@ cursor: pointer;
   margin-left: 40px;
 }
 
+.creditos{
+
+  background-color: #90EE90;
+  width: 1050px;
+  height: 260px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-top: 120px;
+  align-items: center;
+
+
+}
+.img{
+  margin-top: 40px;
+}
+
+.imagens {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  height: 260px;
+  margin-top: -80px;
+}
+
+.nome{
+  position: relative;
+  margin-top: 80px;
+}
+
+
+.creditos  h2{
+
+  color: #2E865F;
+  margin-left: 45%;
+}
+
 /*Fim da tela sobre*/
 
 /*perguntas frequentes */
@@ -598,3 +635,20 @@ h1 {
   color: #333;
   text-decoration: none;
 }
+
+/* div dos creditos*/
+
+#imagem1, #imagem2, #imagem3, #imagem4, #imagem5, #imagem6, #imagem7 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nome1, .nome2, .nome3, .nome4, .nome5, .nome6, .nome7 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* fim div dos creditos*/
