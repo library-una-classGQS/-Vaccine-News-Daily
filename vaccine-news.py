@@ -22,14 +22,10 @@ def cuidados():
 def sobre():
     return render_template('sobre.html', titulo='Sobre')
 
- #@app.route('/search', methods=['POST'])
- #def search():
-  #   search_term = request.json['searchTerm']
-   #  results = []
-    # Aqui você precisa implementar a lógica de busca em todas as páginas do seu site
-    # Por exemplo, você pode usar uma biblioteca como Whoosh ou Elasticsearch para indexar e buscar conteúdo
-    # Em seguida, você precisa retornar os resultados da busca como um JSON
-  #   return jsonify(results=results)
+@app.route('/inscrever')
+def inscrever():
+    return render_template('inscrever.html', titulo='inscrever')
+
 
 
 if __name__ == '__main__':

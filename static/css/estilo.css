@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 body {
@@ -42,12 +43,6 @@ header {
   margin-left: 40px;
 
 }
-
-
-
-
-
-
 
 
 main {
@@ -335,6 +330,53 @@ overflow-y:auto;
 
 }
 
+.username {
+  font-weight: bold;
+  margin-right: 10px;
+
+}
+
+.user-bubble {
+  display: inline-block;
+  background-color: #3CB371;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #fff;
+  
+}
+
+.support-bubble {
+  display: inline-block;
+  background-color: #2E865F;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  max-width: 100%;
+  word-wrap: break-word;
+  float: right;
+}
+
+.user-text{
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  max-width: 100%;
+  word-wrap: break-word;
+
+}
+.support-text {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  max-width: 100%;
+  word-wrap: break-word;
+  float: right;
+}
+
+
 
 
 
@@ -363,6 +405,19 @@ cursor: pointer;
   background-color: #2E865F;
   }
 
+  .btn_cadastrar{
+    background-color: #3CB371;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 12px;
+cursor: pointer;
+  }
+
+  .btn_cadastrar:hover{
+    background-color: #2E865F;
+  }
+
   .email-div{
 
     background-color:	#90EE90;
@@ -389,6 +444,34 @@ cursor: pointer;
   }
 .h2_email{
   margin-left: 380px;
+}
+
+.conteiner_inscrever{
+
+  background-color:	#90EE90;
+  position: center;
+  width: 400px;
+  height: 452px;
+  position: relative;
+  margin-bottom: -64.5px;
+  margin-left: 300px;
+}
+
+.form_inscrever{
+margin-top: 30px;
+margin-left: 60px;
+position: absolute;
+width: 250px;
+}
+
+.email-input {
+width: 100%;
+padding: 10px;
+font-size: 14px;
+border: 1px solid #ccc;
+}
+.h2_email{
+margin-left: 380px;
 }
 /*fim do formulario*/
 
