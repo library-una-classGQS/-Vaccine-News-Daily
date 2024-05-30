@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/carousel.css') }}">
-    <title>{{ titulo }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/carousel.css') }}">
+  <title>{{ titulo }}</title>
 </head>
+
 <body>
-    <header>
-        <a href="{{ url_for('index') }}">
-            <img src="{{ url_for('static', filename='img/cruz.png' )}}" />
-        </a>
-        <a href="{{ url_for('index') }}" class="titulo">
-            <h1>Vaccine News Daily</h1>
-        </a>
-        <form id="search-form">
-            <input type="search" id="search-input" placeholder="Pesquisar...">
-            <button id="search-button">Pesquisar</button>
-            <ul id="search-results"></ul>
-          </form>
-          
-          <a class="img_login"><img src="{{ url_for('static', filename='img/login.com' )}}" alt=""></a>
-          <div id="login-form" class="login-form">
-            <form>
-              <label for="username">Usuário:</label><br>
-              <input type="text" id="username" name="username"><br>
-              <label for="password">Senha:</label><br>
-              <input type="password" id="password" name="password"><br>
-              <input type="submit" value="Entrar">
-              <a class="inscrever" href="{{ url_for('inscrever') }}"> Inscreva-se</a>
-            </form>
-          </div>
-          
-          <script>
-            document.querySelector('.img_login').addEventListener('click', function () {
-              var loginForm = document.querySelector('.login-form');
-              if (loginForm.style.display === 'none' || loginForm.style.display === '') {
-                loginForm.style.display = 'block';
-              } else {
-                loginForm.style.display = 'none';
-              }
-            });
-          </script>
-    </header>
+  <header>
+    <a href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='img/cruz.png' )}}" />
+    </a>
+    <a href="{{ url_for('index') }}" class="titulo">
+      <h1>Vaccine News Daily</h1>
+    </a>
+    <form id="search-form">
+      <input type="search" id="search-input" placeholder="Pesquisar...">
+      <button id="search-button">Pesquisar</button>
+      <ul id="search-results"></ul>
+    </form>
 
-    <input type="checkbox" id="chec">
-    <label class="menu" for="chec">
-        <img src="{{ url_for('static', filename='img/menu.png') }}" />
-    </label>
-
-    <nav>
-        <ul>
-            <li><a class="amenu" href="{{ url_for('index') }}">Inicio</a></li>
-            <li><a class="amenu" href="{{ url_for('cuidados') }}">Cuidados</a></li>
-            <li><a class="amenu" href="{{ url_for('contato') }}">Ajuda</a></li>
-            <li><a class="amenu" href="{{ url_for('sobre') }}">Sobre</a></li>
-        </ul>
-
-        <script src="../static/js/email.js"></script>
-    </nav>
-
-    {% block conteudo_body %}
-    {% endblock %}
-    <a id="support-button" class="support-button"><img src="{{ url_for('static', filename='img/suporte.png') }}" alt="Suporte"></a>
-    <div id="support-chat" class="support-chat">
-        <h2>Suporte</h2>
-        <div id="support-messages" class="support-messages">
-
-          <span class="${isUser ? 'user-bubble' : 'support-bubble'}">
-            <span class="${isUser ? 'user-text' : 'support-text'}"></span>
-        </div>
-        <div class="campo-digitar">
-            <input type="text" id="support-input" class="support-input" placeholder="Digite sua mensagem...">
-            <button id="send-button" class="send-button">Enviar</button>
-        </div>
+    <a class="img_login"><img src="{{ url_for('static', filename='img/login.com' )}}" alt=""></a>
+    <div id="login-form" class="login-form">
+      <form>
+        <label for="username">Usuário:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Senha:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Entrar">
+        <a class="inscrever" href="{{ url_for('inscrever') }}"> Inscreva-se</a>
+      </form>
     </div>
 
-    
-    
+    <script>
+      document.querySelector('.img_login').addEventListener('click', function () {
+        var loginForm = document.querySelector('.login-form');
+        if (loginForm.style.display === 'none' || loginForm.style.display === '') {
+          loginForm.style.display = 'block';
+        } else {
+          loginForm.style.display = 'none';
+        }
+      });
+    </script>
+  </header>
 
-    <footer></footer>
-    <script src="../static/js/carousel.js"></script>
-    <script src="../static/js/suporte.js"></script>
+  <input type="checkbox" id="chec">
+  <label class="menu" for="chec">
+    <img src="{{ url_for('static', filename='img/menu.png') }}" />
+  </label>
+
+  <nav>
+    <ul>
+      <li><a class="amenu" href="{{ url_for('index') }}">Inicio</a></li>
+      <li><a class="amenu" href="{{ url_for('cuidados') }}">Cuidados</a></li>
+      <li><a class="amenu" href="{{ url_for('contato') }}">Ajuda</a></li>
+      <li><a class="amenu" href="{{ url_for('sobre') }}">Sobre</a></li>
+    </ul>
+
+    <script src="../static/js/email.js"></script>
+  </nav>
+
+  {% block conteudo_body %}
+  {% endblock %}
+  <a id="support-button" class="support-button"><img src="{{ url_for('static', filename='img/suporte.png') }}"
+      alt="Suporte"></a>
+  <div id="support-chat" class="support-chat">
+    <h2>Suporte</h2>
+    <div id="support-messages" class="support-messages">
+
+      <span class="${isUser ? 'user-bubble' : 'support-bubble'}">
+        <span class="${isUser ? 'user-text' : 'support-text'}"></span>
+    </div>
+    <div class="campo-digitar">
+      <input type="text" id="support-input" class="support-input" placeholder="Digite sua mensagem...">
+      <button id="send-button" class="send-button">Enviar</button>
+    </div>
+  </div>
+
+
+
+
+
+
+  <footer></footer>
+  <script src="../static/js/carousel.js"></script>
+  <script src="../static/js/suporte.js"></script>
 </body>
-</html>
 
+</html>

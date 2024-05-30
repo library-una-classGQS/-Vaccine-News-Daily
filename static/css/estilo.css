@@ -356,7 +356,6 @@ overflow-y:auto;
   margin-left: 0.5em;
   max-width: 100%;
   word-wrap: break-word;
-  float: right;
 }
 
 .user-text{
@@ -373,10 +372,7 @@ overflow-y:auto;
   border-radius: 1em;
   max-width: 100%;
   word-wrap: break-word;
-  float: right;
 }
-
-
 
 
 
