@@ -26,6 +26,10 @@ def sobre():
 def inscrever():
     return render_template('inscrever.html', titulo='inscrever')
 
+@app.route('/forum')
+def forum():
+    return render_template('forum.html', titulo='forum')
+
 
 
 if __name__ == '__main__':
