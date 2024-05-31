@@ -78,9 +78,10 @@ footer {
   text-align: center;
   z-index: 1;
   height: auto;
-  position: relative;
-  top: 60px;
+  position: fixed;
+  top: 699px;
   width: 100%;
+  
   
 }
 
