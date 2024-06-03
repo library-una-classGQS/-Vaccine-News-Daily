@@ -1,0 +1,70 @@
+
+{% extends "template.html" %}
+{%block conteudo_body %}
+<main>
+
+    <h1>Prevenção de doenças que exigem a vacinação</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jKGda3zw3m4?si=xhHKXyLXOVy8eZEC"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div class="container">
+            <h1>Gostou do conteudo e deseja baixar um arquivo PDF sobre os cidados diarios para manter a saúde?</h1>
+            <a href="../static/img/cuidados.pdf" download="meu-arquivo.pdf" class="download-button">Baixar PDF</a>
+        </div>
+
+    <div class="faq-container">
+        <h1>Perguntas Frequentes sobre Vacinas</h1>
+        <div class="faq-item">
+            <button class="faq-question">As vacinas são seguras?</button>
+            <div class="faq-answer">
+                <p>As vacinas são submetidas a rigorosos testes clínicos para garantir sua segurança e eficácia antes de
+                    serem aprovadas pelas autoridades de saúde, como a Organização Mundial da Saúde (OMS) e a Agência
+                    Nacional de Vigilância Sanitária (ANVISA). Após a aprovação, elas continuam sendo monitoradas para
+                    detectar qualquer evento adverso raro. Embora algumas pessoas possam experimentar efeitos colaterais
+                    leves, como dor no local da injeção ou febre baixa, os benefícios das vacinas em prevenir doenças
+                    graves superam amplamente esses riscos.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Qual é a eficácia das vacinas?</button>
+            <div class="faq-answer">
+                <p>A eficácia das vacinas pode variar dependendo da doença que estão destinadas a prevenir, da saúde do
+                    indivíduo e de outros fatores. Em geral, as vacinas são altamente eficazes em prevenir doenças. Por
+                    exemplo, as vacinas contra o sarampo, a caxumba e a rubéola (tríplice viral) têm uma eficácia
+                    superior a 90%. Mesmo quando uma vacina não previne completamente a infecção, ela pode reduzir
+                    significativamente a gravidade da doença.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Quais vacinas são recomendadas para adultos?</button>
+            <div class="faq-answerul">
+                <p>As vacinas recomendadas para adultos podem variar dependendo da idade, saúde, estilo de vida e
+                    viagens. Algumas das vacinas geralmente recomendadas para adultos incluem:
+                <ul>
+                    <li><strong>Vacina contra a gripe:</strong> Recomendada anualmente para todos os adultos.</li>
+                    <li><strong>Vacina contra o tétano, difteria e coqueluche (dTpa):</strong> Reforço a cada 10 anos.
+                    </li>
+                    <li><strong>Vacina contra a hepatite B:</strong> Para aqueles que não foram vacinados na infância.
+                    </li>
+                    <li><strong>Vacina contra o HPV:</strong> Recomendada para adultos jovens.</li>
+                    <li><strong>Vacina contra a pneumonia (pneumocócica):</strong> Especialmente para adultos com <br>65
+                        anos ou mais, ou para aqueles com condições de saúde crônicas.</li>
+                    <li><strong>Vacina contra a COVID-19:</strong> Recomendações específicas podem variar conforme novas
+                        variantes surgem e mais dados se tornam disponíveis.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script src="../static/js/perguntas.js"></script>
+
+
+
+</main>
+{% endblock %}

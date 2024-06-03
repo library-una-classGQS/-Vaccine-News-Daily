@@ -1,0 +1,15 @@
+{% extends "template.html" %}
+{% block conteudo_body  %}
+
+<h1>Resultados da Pesquisa</h1>
+<ul>
+    {% for resultado in resultados %}
+        <li>
+            <h2>{{ resultado.titulo }}</h2>
+            <p>{{ resultado.conteudo }}</p>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('index') }}">Nova Pesquisa</a>
+
+{% endblock %}

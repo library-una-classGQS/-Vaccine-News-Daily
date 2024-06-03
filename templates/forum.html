@@ -1,0 +1,29 @@
+{% extends "template.html" %}
+{%block conteudo_body  %}
+
+<main>
+    <div class="container_forum">
+        <h1>Fórum </h1>
+
+        <div id="posts" class="posts">
+            <!-- Posts aparecerão aqui -->
+        </div>
+        
+        <div class="post-forum">
+            <h2>Nova Pergunta</h2>
+            <form id="postForum">
+                <input type="text" id="question" placeholder="Digite sua pergunta" required>
+                <input type="file" id="imageInput" accept="image/*">
+                <button type="submit">Postar</button>
+            </form>
+        </div>
+        
+       
+    </div>
+
+   
+    <script src="../static/js/forum.js"></script>
+
+</main>
+
+{% endblock %}
