@@ -1,4 +1,3 @@
-// Adicione o seguinte código ao seu arquivo JavaScript
 
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
@@ -39,4 +38,3 @@ searchInput.addEventListener('keyup', (e) => {
     searchButton.click();
   }
 });
-

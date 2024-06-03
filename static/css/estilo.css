@@ -1,7 +1,9 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 body {
@@ -31,22 +33,17 @@ header {
 
 }
 
-header h1 {
+.header h1 {
   margin: 0;
   font-size: 1.5rem;
 }
+
 
 .titulo{
   position: absolute;
   margin-left: 40px;
 
 }
-
-
-
-
-
-
 
 
 main {
@@ -82,10 +79,11 @@ footer {
   text-align: center;
   z-index: 1;
   height: auto;
-  position: relative;
-  top: 60px;
+  position: fixed;
+  top: 699px;
   width: 100%;
-  
+
+
 }
 
 .article{
@@ -185,7 +183,7 @@ margin-left: 650px;
   position: relative;
   margin-left: 1240px;
   cursor: pointer;
-  
+
 }
 
 
@@ -241,6 +239,41 @@ margin-left: 650px;
 
 
 /* suporte*/
+
+
+.user-bubble {
+  display: inline-block;
+  background-color: #3CB371;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+
+.support-bubble {
+  display: inline-block;
+  background-color: #2E865F;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.user-text,
+.support-text {
+  display: inline-block;
+  background-color: #3CB371;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+
 .support-button {
 position: fixed;
 bottom: 20px;
@@ -262,10 +295,9 @@ right: 20px;
 background-color: #2E865F;
 border: 1px solid #ccc;
 padding: 10px;
-width: 300px;
+width: 320px;
 height: 400px;
 overflow-y: auto;
-color: #fff;
 }
 
 .support-chat h2 {
@@ -273,7 +305,7 @@ margin-top: 0;
 }
 
 .support-input {
-width: 100%;
+width: 70%;
 padding: 10px;
 font-size: 16px;
 border: 1px solid #ccc;
@@ -295,11 +327,55 @@ background-color: #2E865F;
 .support-messages {
 padding: 10px;
 height: 300px;
-
 position: relative;
 overflow-y:auto;
 
 }
+
+.username {
+  font-weight: bold;
+  margin-right: 10px;
+
+}
+
+.user-bubble {
+  display: inline-block;
+  background-color: #3CB371;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #fff;
+
+}
+
+.support-bubble {
+  display: inline-block;
+  background-color: #2E865F;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.user-text{
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  max-width: 100%;
+  word-wrap: break-word;
+
+}
+.support-text {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
 
 
 /* fimn suporte*/
@@ -312,6 +388,7 @@ overflow-y:auto;
 }
 
 /*formulario da pagina ajuda*/
+
 .btn_enviarmsg{
 background-color: #3CB371;
 color: #fff;
@@ -324,6 +401,19 @@ cursor: pointer;
 
 .btn_enviarmsg:hover {
   background-color: #2E865F;
+  }
+
+  .btn_cadastrar{
+    background-color: #3CB371;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 12px;
+cursor: pointer;
+  }
+
+  .btn_cadastrar:hover{
+    background-color: #2E865F;
   }
 
   .email-div{
@@ -352,6 +442,34 @@ cursor: pointer;
   }
 .h2_email{
   margin-left: 380px;
+}
+
+.conteiner_inscrever{
+
+  background-color:	#90EE90;
+  position: center;
+  width: 400px;
+  height: 452px;
+  position: relative;
+  margin-bottom: -64.5px;
+  margin-left: 300px;
+}
+
+.form_inscrever{
+margin-top: 30px;
+margin-left: 60px;
+position: absolute;
+width: 250px;
+}
+
+.email-input {
+width: 100%;
+padding: 10px;
+font-size: 14px;
+border: 1px solid #ccc;
+}
+.h2_email{
+margin-left: 380px;
 }
 /*fim do formulario*/
 
@@ -419,6 +537,46 @@ cursor: pointer;
   margin-left: 40px;
 }
 
+.creditos{
+
+  background-color: #90EE90;
+  width: 1050px;
+  height: 260px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-top: 120px;
+  align-items: center;
+
+
+}
+.img{
+  margin-top: 40px;
+
+}
+
+.imagens {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  height: 260px;
+  margin-top: -80px;
+}
+
+.nome{
+  position: relative;
+  margin-top: 80px;
+}
+
+
+.creditos  h2{
+
+  color: #2E865F;
+  margin-left: 45%;
+}
+
+
+
 /*Fim da tela sobre*/
 
 /*perguntas frequentes */
@@ -463,9 +621,24 @@ h1 {
   border-top: 1px solid #ccc;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  position: relative;
+  max-height: 400px;
+}
+.faq-answerul{
+  background: #f1f1f1;
+  padding: 15px;
+  display: none;
+  border-top: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  height: 320px;
 }
 
-
+.faq-answer ul{
+  position: absolute;
+  margin-top: -90px;
+}
 
 /*fim perguntas frequentes */
 
@@ -476,7 +649,7 @@ h1 {
   width: 500px;
   margin-left: 660px;
   position: absolute;
-  margin-top: -600px;
+  margin-top: -300px;
 
 }
 
@@ -528,3 +701,106 @@ h1 {
 #search-results a:hover {
   text-decoration: underline;
 }
+
+
+/*pesquisa*/
+#search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+#search-results li {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+#search-results li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* div dos creditos*/
+
+#imagem1, #imagem2, #imagem3, #imagem4, #imagem5, #imagem6, #imagem7 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nome1, .nome2, .nome3, .nome4, .nome5, .nome6, .nome7 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* fim div dos creditos*/
+
+/*forum */
+
+.container_forum {
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_forum  h1 {
+  text-align: center;
+  color: #333;
+}
+
+.post-forum, .posts {
+  margin-top: 20px;
+}
+
+.post-forum input[type="text"], .post-forum input[type="file"], .response-forum input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post-forum button, .response-form button {
+  padding: 10px 15px;
+  background: #5cb85c;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.post-form button:hover, .response-form button:hover {
+  background: #4cae4c;
+}
+
+.post {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.response {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+.responses {
+  margin-top: 10px;
+}
+
+.response-form {
+  margin-top: 10px;
+}
+/*fim forum */
