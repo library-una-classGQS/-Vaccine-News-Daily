@@ -1,6 +1,6 @@
 {% extends "template.html" %}
 {% block conteudo_body  %}
-
+<div class="resultado_pesquisa">
 <h1>Resultados da Pesquisa</h1>
 <ul>
     {% for resultado in resultados %}
@@ -10,6 +10,5 @@
         </li>
     {% endfor %}
 </ul>
-<a href="{{ url_for('index') }}">Nova Pesquisa</a>
-
+</div>
 {% endblock %}
