@@ -807,19 +807,79 @@ h1 {
 
 
 /*inicio pesquisa */
-
+/*
 .resultado_pesquisa{
 
   margin-top: 100px;
-  margin-left: 250px;
+  margin-left: 270px;
 }
 
 .resultado_pesquisa ul{
   position: relative;
+  margin-top: -150px;
+  margin-left: 40px;
+}
+
+.resultado_pesquisa li{
+  position: absolute;
+  margin-left: 40px;
 }
 
 .resultado_pesquisa H1{
   position: relative;
   margin-left: 250px;
+} */
+.resultado_pesquisa {
+  margin-top: -100px;
+  margin-left: 270px;
 }
+
+.resultado_pesquisa h1{
+  position: relative;
+margin-top: 200px;
+}
+
+.resultado_pesquisa ul {
+  position: relative;
+  margin-top: -100px;
+  padding-left: 0;
+}
+
+.resultado_pesquisa li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.resultado_pesquisa h1 {
+  margin-left: 250px;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.img_noticias {
+  width: 200px; /* Ajuste conforme necessário */
+  height: 150px; /* Ajuste conforme necessário */
+  margin-right: 20px;
+}
+
+.txt_noticias{
+  width: 700px;
+  margin-left: -10px;
+  margin-top: -120px;
+}
+
+.txt_noticias a {
+  text-decoration: none;
+  color: #333;
+ 
+}
+
+.txt_noticias p {
+  margin: 0;
+}
+
 /*fim pesquisa */
