@@ -7,29 +7,7 @@ path = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)
 
 
-@app.route('/')
-def index():
-    return render_template('index.html', titulo='Vaccine News | Home')
 
-
-@app.route('/contato')
-def contato():
-    return render_template('contato.html', titulo='Ajuda')
-
-
-@app.route('/cuidados')
-def cuidados():
-    return render_template('cuidados.html', titulo='Cuidados')
-
-
-@app.route('/sobre')
-def sobre():
-    return render_template('sobre.html', titulo='Sobre')
-
-
-@app.route('/inscrever')
-def inscrever():
-    return render_template('inscrever.html', titulo='inscrever')
 
 
 @app.route('/pesquisar', methods=['POST'])
@@ -58,6 +36,54 @@ def erro():
 @app.route('/forum')
 def forum():
     return render_template('forum.html', titulo='forum')
+
+
+
+
+@app.route('/search', methods=['POST'])
+def search():
+    data = request.json
+    search_term = data.get('searchTerm').lower()
+    results = []
+    
+    if 'hpv' in search_term:
+        results.append({
+            "titulo": "HPV",
+            "conteudo": "Ministerio da saude anuncia vacinas em dose unica contra hpv, veja como se instreves",
+            "imagem": "hpv.jpg"
+        })
+    if 'dengue' in search_term:
+        results.append({
+            "titulo": "Dengue",
+            "conteudo": "Ministerio da Saude discute estratégia para distribuição de vacina contra Dengue",
+            "imagem": "dengue.jpg"
+        })
+    
+    return jsonify({"results": results})
+
+@app.route('/')
+def index():
+    return render_template('index.html', titulo='Vaccine News | Home')
+
+
+@app.route('/contato')
+def contato():
+    return render_template('contato.html', titulo='Ajuda')
+
+
+@app.route('/cuidados')
+def cuidados():
+    return render_template('cuidados.html', titulo='Cuidados')
+
+
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html', titulo='Sobre')
+
+
+@app.route('/inscrever')
+def inscrever():
+    return render_template('inscrever.html', titulo='inscrever')
 
 
 if __name__ == '__main__':

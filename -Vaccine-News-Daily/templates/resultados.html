@@ -6,7 +6,7 @@
     {% for resultado in resultados %}
       <li>
         <article class="article">
-          <img class="img_noticias" src="{{ url_for('static', filename='img/covid.jpg') }}" />
+          <img class="img_noticias" src="{{ url_for('static', filename='img/' + resultado.imagem) }}" />
           <div class="txt_noticias">
             <a href="#"><p>{{ resultado.conteudo }}</p></a>
           </div>
