@@ -3,19 +3,20 @@
 
 <main>
     <div class="conteiner_inscrever">
-        <form class="form_inscrever" id="increver">
+        <form class="form_inscrever" id="increver" action="{{ url_for('cadastrar') }}" method="post" enctype="multipart/form-data">
             <label for="nome">Nome:</label><br>
             <input class="email-input" type="text" id="nome" name="nome" placeholder="José Maria"><br><br>
+
             <label for="email">Email:</label><br>
             <input class="email-input" type="email" id="email" name="email" placeholder="exemplo@gmail.com"><br><br>
-            <label for="cpf">CPF/CNPJ:</label><br>
-            <input class="email-input" type="text" id="cpf" name="cpf"
-                placeholder="CPF /CNPJ.."></input><br><br>
-                <label for="senha">Senha:</label><br>
-                <input class="email-input" type="password" id="senha" name="senha"
-                placeholder="Senha"></input><br><br>
-            <input class="btn_cadastrar" type="submit" value="Enviar"><br><br>
 
+            <label for="cpf">CPF/CNPJ:</label><br>
+            <input class="email-input" type="text" id="cpf" name="cpf_cnpj" placeholder="CPF/CNPJ"><br><br>
+
+            <label for="senha">Senha:</label><br>
+            <input class="email-input" type="password" id="senha" name="senha" placeholder="Senha"><br><br>
+
+            <input class="btn_cadastrar" type="submit" value="Enviar"><br><br>
         </form>
     </div>
 </main>

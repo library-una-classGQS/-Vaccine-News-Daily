@@ -1,8 +1,8 @@
 import json
 import os
 
-from flask import redirect, render_template, request, url_for
-from projeto import db, app
+from flask import redirect, render_template, request, url_for, session, flash
+from projeto import db, app, migrate
 from projeto.models.usuario import Usuario
 
 
@@ -63,6 +63,44 @@ def sobre():
 @app.route("/inscrever")
 def inscrever():
     return render_template("inscrever.html", titulo="inscrever")
+
+
+@app.route("/cadastrar", methods=['POST',])
+def cadastrar():
+    nome = request.form['nome']
+    email = request.form['email']
+    cpf_cnpj = request.form['cpf_cnpj']
+    senha = request.form['senha']
+
+    usuario = Usuario.query.filter_by(email=email).first() or Usuario.query.filter_by(cpf_cnpj=cpf_cnpj).first()
+
+    if usuario:
+        flash(f'{usuario} já existe')
+        return redirect(url_for('inscrever'))
+
+    novo_usuario = Usuario(nome=nome, email=email, cpf_cnpj=cpf_cnpj, senha=senha)
+    db.session.add(novo_usuario)
+    db.session.commit()
+
+    return redirect(url_for('index'))
+
+
+@app.route("/autenticar", methods=['POST',])
+def autenticar():
+    email_login = request.form['username']
+    senha = request.form['password']
+
+    usuario = Usuario.query.filter_by(email=email_login).first() and Usuario.query.filter_by(senha=senha).first()
+
+    if not usuario:
+        return redirect(url_for('login'))
+    else:
+        return redirect(url_for('index'))
+
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
 
 
 if __name__ == "__main__":

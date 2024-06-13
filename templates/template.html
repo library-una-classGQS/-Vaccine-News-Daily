@@ -26,7 +26,7 @@
 
     <a class="img_login"><img src="{{ url_for('static', filename='img/login.com' )}}" alt=""></a>
     <div id="login-form" class="login-form">
-      <form>
+      <form action="{{ url_for('autenticar') }}" method="post" enctype="multipart/form-data">
         <label for="username">Usuário:</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="password">Senha:</label><br>

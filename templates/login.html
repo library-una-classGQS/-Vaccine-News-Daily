@@ -1,0 +1,19 @@
+{% extends "template.html" %}
+{%block conteudo_body %}
+
+<main>
+    <div class="conteiner_inscrever">
+        <form class="form_inscrever" id="login">
+            <label for="email">Email:</label><br>
+            <input class="email-input" type="email" id="email" name="email" placeholder="exemplo@gmail.com"><br><br>
+
+            <label for="senha">Senha:</label><br>
+            <input class="email-input" type="password" id="senha" name="senha" placeholder="Senha"><br><br>
+
+            <input class="btn_cadastrar" type="submit" value="Login"><br><br>
+            <a href="{{ url_for('inscrever') }}">Cadastre-se</a>
+        </form>
+    </div>
+</main>
+
+{% endblock %}
