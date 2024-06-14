@@ -1,12 +1,36 @@
 import json
 import os
+from functools import wraps
 
-from flask import redirect, render_template, request, url_for, session, flash
-from projeto import db, app, migrate
+from flask import flash, g, redirect, render_template, request, session, url_for
+
+from projeto import app, db, migrate
 from projeto.models.usuario import Usuario
 
-
 path = os.path.dirname(os.path.abspath(__file__))
+
+
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if not session.get("usuario_logado"):
+            return redirect(url_for("login"))
+        return f(*args, **kwargs)
+
+    return decorated_function
+
+
+@app.before_request
+def before_request():
+    g.logado = session.get("usuario_logado", False)
+    g.nome = session.get("nome", None)
+    g.email = session.get("email", None)
+    g.cpf_cnpj = session.get("cpf_cnpj", None)
+
+
+@app.route("/")
+def index():
+    return render_template("index.html", titulo="Vaccine News | Home")
 
 
 @app.route("/pesquisar", methods=["POST"])
@@ -30,19 +54,56 @@ def pesquisar():
     return render_template("resultados.html", resultados=resultados)
 
 
-@app.route("/erro")
-def erro():
-    return render_template("erro.html")
+@app.route("/cadastrar", methods=["POST",])
+def cadastrar():
+    nome = request.form["nome"]
+    email = request.form["email"]
+    cpf_cnpj = request.form["cpf_cnpj"]
+    senha = request.form["senha"]
+
+    usuario = (
+        Usuario.query.filter_by(email=email).first()
+        or Usuario.query.filter_by(cpf_cnpj=cpf_cnpj).first()
+    )
+
+    if usuario:
+        flash(f"{usuario} já existe")
+        return redirect(url_for("inscrever"))
+
+    novo_usuario = Usuario(nome=nome, email=email, cpf_cnpj=cpf_cnpj, senha=senha)
+    db.session.add(novo_usuario)
+    db.session.commit()
+
+    return redirect(url_for("index"))
+
+
+@app.route(
+    "/autenticar",
+    methods=[
+        "POST",
+    ],
+)
+def autenticar():
+    email_login = request.form["username"]
+    senha = request.form["password"]
+
+    usuario = Usuario.query.filter_by(email=email_login, senha=senha).first()
+
+    if not usuario:
+        return redirect(url_for("login"))
+    else:
+        session["usuario_logado"] = True
+        session["nome"] = usuario.nome
+        session["email"] = usuario.email
+        session["cpf_cnpj"] = usuario.cpf_cnpj
+
+        return redirect(url_for("index"))
 
 
 @app.route("/forum")
+@login_required
 def forum():
-    return render_template("forum.html", titulo="forum")
-
-
-@app.route("/")
-def index():
-    return render_template("index.html", titulo="Vaccine News | Home")
+    return render_template("forum.html", titulo="Fórum")
 
 
 @app.route("/contato")
@@ -65,42 +126,20 @@ def inscrever():
     return render_template("inscrever.html", titulo="inscrever")
 
 
-@app.route("/cadastrar", methods=['POST',])
-def cadastrar():
-    nome = request.form['nome']
-    email = request.form['email']
-    cpf_cnpj = request.form['cpf_cnpj']
-    senha = request.form['senha']
-
-    usuario = Usuario.query.filter_by(email=email).first() or Usuario.query.filter_by(cpf_cnpj=cpf_cnpj).first()
-
-    if usuario:
-        flash(f'{usuario} já existe')
-        return redirect(url_for('inscrever'))
-
-    novo_usuario = Usuario(nome=nome, email=email, cpf_cnpj=cpf_cnpj, senha=senha)
-    db.session.add(novo_usuario)
-    db.session.commit()
-
-    return redirect(url_for('index'))
-
-
-@app.route("/autenticar", methods=['POST',])
-def autenticar():
-    email_login = request.form['username']
-    senha = request.form['password']
-
-    usuario = Usuario.query.filter_by(email=email_login).first() and Usuario.query.filter_by(senha=senha).first()
-
-    if not usuario:
-        return redirect(url_for('login'))
-    else:
-        return redirect(url_for('index'))
-
-
-@app.route('/login')
+@app.route("/login")
 def login():
-    return render_template('login.html')
+    return render_template("login.html")
+
+
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect(url_for("index"))
+
+
+@app.route("/erro")
+def erro():
+    return render_template("erro.html")
 
 
 if __name__ == "__main__":

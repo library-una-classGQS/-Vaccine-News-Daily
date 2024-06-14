@@ -1,9 +1,9 @@
 DEBUG = True
 
-USERNAME = 'root'
-PASSWORD = '1008981904'
-SERVER = 'localhost'
-DB = 'vaccine-news'
+USERNAME = "root"
+PASSWORD = "1008981904"
+SERVER = "localhost"
+DB = "vaccine-news"
 
-SQLALCHEMY_DATABASE_URI = f'mysql://{USERNAME}:{PASSWORD}@{SERVER}/{DB}'
+SQLALCHEMY_DATABASE_URI = f"mysql://{USERNAME}:{PASSWORD}@{SERVER}/{DB}"
 SQLALCHEMY_TRACK_MODIFICATIONS = False
