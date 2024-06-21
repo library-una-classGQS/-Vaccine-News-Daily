@@ -103,7 +103,7 @@ footer {
 .noticia_maior{
   position: absolute;
   width: 500px;
-margin-top: -800px;
+margin-top: -1450px;
 margin-left: 650px;
 }
 .img_noticia_maior{
@@ -900,6 +900,11 @@ margin-top: 200px;
   width: 700px;
   margin-left: -10px;
   margin-top: -120px;
+}
+.txt_noticias_g{
+  width: 700px;
+  margin-left: -10px;
+  margin-top: -60px;
 }
 
 .txt_noticias a {
