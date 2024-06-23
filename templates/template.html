@@ -39,11 +39,11 @@
     
 
     {% else %}
-      <a class="img_login"><img src="{{ url_for('static', filename='img/login.com' )}}" alt=""></a>
-      <div id="logado" class="logado-form">
-        <a class="nome_usuario">Nome: {{ g.nome }}</a><br>
-        <a class="nome_usuario">E-mail: {{ g.email }}</a><br>
-        <a class="nome_usuario">CPF/CNPJ: {{ g.cpf_cnpj }}</a><br>
+      <a class="img_login"><img src="{{ url_for('static', filename='img/login.com') }}" alt=""></a>
+      <div id="logado" class="login-form">
+        <a class="nome_usuario">Nome: {{ g.nome }}</a><br><br>
+        <a class="nome_usuario">E-mail: {{ g.email }}</a><br><br>
+        <a class="nome_usuario">CPF/CNPJ: {{ g.cpf_cnpj }}</a><br><br>
         <a class="btn_logout" href="{{ url_for('logout') }}">Logout</a>
       </div>
 

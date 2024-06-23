@@ -67,7 +67,7 @@ def cadastrar():
     )
 
     if usuario:
-        flash(f"{usuario} já existe")
+        flash(f"Usuário já cadastrado!")
         return redirect(url_for("inscrever"))
 
     novo_usuario = Usuario(nome=nome, email=email, cpf_cnpj=cpf_cnpj, senha=senha)

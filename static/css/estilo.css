@@ -186,18 +186,6 @@ margin-left: 650px;
 
 }
 
-.logado-form{
-
-  display: block;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #2E865F;
-  border: 1px solid #ccc;
-  padding: 10px;
-
-}
-
 
 
 .login-form {
@@ -462,7 +450,7 @@ cursor: pointer;
   background-color:	#90EE90;
   position: center;
   width: 400px;
-  height: 452px;
+  height: 480px;
   position: relative;
   margin-bottom: -64.5px;
   margin-left: 300px;
@@ -918,3 +906,8 @@ margin-top: 200px;
 }
 
 /*fim pesquisa */
+
+.list-unstyled{
+  margin-top: 330px;
+  margin-left: 110px;
+}
