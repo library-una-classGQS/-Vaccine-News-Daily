@@ -79,7 +79,7 @@ footer {
   text-align: center;
   z-index: 5;
   height: auto;
-  position: fixed;
+  position: relative;
   top: 699px;
   width: 100%;
 
@@ -404,14 +404,14 @@ cursor: pointer;
   background-color: #2E865F;
   }
 
-  .btn_cadastrar{
-    background-color: #3CB371;
-color: #fff;
-border: none;
-padding: 10px 20px;
-font-size: 12px;
-cursor: pointer;
-  }
+.btn_cadastrar{
+  background-color: #3CB371;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
 
   .btn_cadastrar:hover{
     background-color: #2E865F;
@@ -474,10 +474,17 @@ cursor: pointer;
 }
 
 .form_inscrever{
-margin-top: 30px;
-margin-left: 60px;
-position: absolute;
-width: 250px;
+  margin-top: 30px;
+  margin-left: 60px;
+  position: absolute;
+  width: 250px;
+}
+
+.form_login{
+  margin-top: 30px;
+  margin-left: 60px;
+  position: absolute;
+  width: 250px;
 }
 
 .email-input {
@@ -909,5 +916,43 @@ margin-top: 200px;
 
 .list-unstyled{
   margin-top: 330px;
-  margin-left: 110px;
+  margin-left: 40px;
+  width: 80%;
+  background-color: #ff9696;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.list-unstyled__login{
+  width: 80%;
+  margin-top: 200px;
+  margin-left: 40px;
+  background-color: #ff9696;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cadastrar{
+  position: relative;
+  top: -56px;
+  margin-left: 140px;
+  background-color: #3CB371;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.list-unstyled__success{
+  margin-top: -20px;
+  margin-left: 600px;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  border-radius: 8px;
+  width: 20%;
+  background-color: #00ff70;
 }

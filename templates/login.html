@@ -11,8 +11,17 @@
             <input class="email-input" type="password" id="senha" name="password" placeholder="Senha"><br><br>
 
             <input class="btn_cadastrar" type="submit" value="Login"><br><br>
-            <a href="{{ url_for('inscrever') }}">Cadastre-se</a>
+            <a href="{{ url_for('inscrever') }}" class="cadastrar">Cadastre-se</a>
         </form>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul id="messages" class="list-unstyled__login">
+            {% for message in messages %}
+                <li class="alert alert-success">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
     </div>
 </main>
 

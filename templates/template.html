@@ -80,6 +80,19 @@
 
   {% block conteudo_body %}
   {% endblock %}
+
+  {% if g.logado %}
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul id="messages" class="list-unstyled__success">
+          {% for message in messages %}
+            <li class="alert alert-success">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+  {% endif %}
+
   <a id="support-button" class="support-button"><img src="{{ url_for('static', filename='img/suporte.png') }}"
       alt="Suporte"></a>
   <div id="support-chat" class="support-chat">
@@ -94,11 +107,6 @@
       <button id="send-button" class="send-button">Enviar</button>
     </div>
   </div>
-
-
-
-
-
 
   <footer></footer>
   <script src="../static/js/carousel.js"></script>

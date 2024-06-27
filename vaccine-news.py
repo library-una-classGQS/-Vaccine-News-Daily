@@ -42,10 +42,7 @@ def pesquisar():
         artigos = json.load(file)
 
     for artigo in artigos:
-        if (
-            pesquisa.lower() in artigo["conteudo"].lower()
-            or pesquisa.lower() in artigo["titulo"].lower()
-        ):
+        if (pesquisa.lower() in artigo["conteudo"].lower() or pesquisa.lower() in artigo["titulo"].lower()):
             resultados.append(artigo)
 
     if not resultados:
@@ -54,17 +51,14 @@ def pesquisar():
     return render_template("resultados.html", resultados=resultados)
 
 
-@app.route("/cadastrar", methods=["POST",])
+@app.route("/cadastrar", methods=["POST", ])
 def cadastrar():
     nome = request.form["nome"]
     email = request.form["email"]
     cpf_cnpj = request.form["cpf_cnpj"]
     senha = request.form["senha"]
 
-    usuario = (
-        Usuario.query.filter_by(email=email).first()
-        or Usuario.query.filter_by(cpf_cnpj=cpf_cnpj).first()
-    )
+    usuario = (Usuario.query.filter_by(email=email).first() or Usuario.query.filter_by(cpf_cnpj=cpf_cnpj).first())
 
     if usuario:
         flash(f"Usuário já cadastrado!")
@@ -77,12 +71,7 @@ def cadastrar():
     return redirect(url_for("index"))
 
 
-@app.route(
-    "/autenticar",
-    methods=[
-        "POST",
-    ],
-)
+@app.route("/autenticar", methods=["POST", ])
 def autenticar():
     email_login = request.form["username"]
     senha = request.form["password"]
@@ -90,12 +79,15 @@ def autenticar():
     usuario = Usuario.query.filter_by(email=email_login, senha=senha).first()
 
     if not usuario:
+        flash("Login/senha incorreto")
         return redirect(url_for("login"))
     else:
         session["usuario_logado"] = True
         session["nome"] = usuario.nome
         session["email"] = usuario.email
         session["cpf_cnpj"] = usuario.cpf_cnpj
+
+        flash(f"Bem-vindo {session['nome']}")
 
         return redirect(url_for("index"))
 
@@ -140,7 +132,6 @@ def logout():
 @app.route("/erro")
 def erro():
     return render_template("erro.html")
-
 
 
 if __name__ == "__main__":
