@@ -1,1 +1,1 @@
-<h1>Vaccine News Daily</h1>h1
+<h1 align="center">Vaccine News Daily</h1>
