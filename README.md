@@ -2,9 +2,9 @@
 
 
 ### Sumário:
-- [Introdução](#Introdução)
-- [Instalação](#Instalação)
-- [Execução e uso](#Execução-e-uso)
+- [Introdução](#introdução)
+- [Instalação](#instalação)
+- [Execução e uso](#execução-e-uso)
 
 
 ### Introdução
@@ -27,29 +27,29 @@ Abaixo alguns tópicos para melhor entendimento e visualização:
 - Tela inicial:
 <br>
 <br>
-<img src="https://abrir.link/kHGLg" alt="Página Inicial" width="700">
+<img src="https://i.imgur.com/citYjaB.png" alt="Página Inicial" width="700">
 <br>
 <br>
 - Cuidados:
 <br>
 <br>
-<img src="https://abrir.link/iahQg" alt="Página Inicial" width="700">
+<img src="https://i.imgur.com/gO17ZHl.png" alt="Página Inicial" width="700">
 <br>
 <br>
 - Login:
 <br>
 <br>
-<img src="https://abrir.link/BdUcw" alt="Página Inicial" width="700">
+<img src="https://i.imgur.com/2fqltEZ.png" alt="Página Inicial" width="700">
 <br>
 <br>
 - Fórum:
 <br>
 <br>
-<img src="https://abrir.link/xjyMZ" alt="Página Inicial" width="700">
+<img src="https://i.imgur.com/XeLkut8.png" alt="Página Inicial" width="700">
 <br>
 <br>
 
-### Instalação:
+### Instalação
 
 <p>
 O projeto utiliza o gerenciador de dependências <strong>Poetry</strong>. Aqui está o passo a passo da instalação:
@@ -72,7 +72,7 @@ O projeto utiliza o gerenciador de dependências <strong>Poetry</strong>. Aqui e
 
    > ``cd <caminho/para/o/projeto>``
 
-4. *Instalar as dependências do projeto (Caso não possua o Poetry ou o Python instalado,siga o passo a passo clicando [aqui¹](#Instalação-do-python-e-do-poetry))*
+4. *Instalar as dependências do projeto (Caso não possua o Poetry ou o Python instalado,siga o passo a passo clicando [aqui¹](#instalação-do-python-e-do-poetry))*
 
    > ``poetry install``
 
@@ -86,42 +86,34 @@ O projeto utiliza o gerenciador de dependências <strong>Poetry</strong>. Aqui e
 
 
 - **Utilizando o cmd:**
-<br>
-<br>
   - Defina o aplicativo Flask:
-    > `set FLASK_APP=vaccine_news.py`
+     `set FLASK_APP=vaccine_news.py`
   - Execute:
-    > `flask run --debug`
+     `flask run --debug`
 
 <br>
 
 - **Utilizando Pycharm:**
-<br>
-<br>
   - Procure onde seu ambiente virtual foi instalado e copie o caminho que foi dado:
     > `poetry env info --path`
   - Adicione o interpretadir criado ao Pycharm:
-    - No canto superior esquerdo clique nas 4 barrinhas
-    - Vá até *Settings - Project: Vaccine-News-Daily - Python interpreter*
-    - Selecione *Add interpreter - Add local interpreter*
-    - Selecione *Poetery Environment - Existing Environment - Interpreter: ...*
-    - Cole o caminho do projeto, navegue até a pasta *Scripts* e selecione o arquivo *python.exe*
-    - Aplique as modificações e reinicie o Pycharm
-<br>
-<br>
+  - No canto superior esquerdo clique nas 4 barrinhas
+  - Vá até *Settings - Project: Vaccine-News-Daily - Python interpreter*
+  - Selecione *Add interpreter - Add local interpreter*
+  - Selecione *Poetery Environment - Existing Environment - Interpreter: ...*
+  - Cole o caminho do projeto, navegue até a pasta *Scripts* e selecione o arquivo *python.exe*
+  - Aplique as modificações e reinicie o Pycharm
 <br>
 
 - **Utilizando VsCode:**
-<br>
-<br>
   - Procure onde seu ambiente virtual foi instalado e copie o caminho que foi dado:
     > `poetry env info --path`
   - Adicione o interpretador criado ao VsCode:
-    - Pressione as teclas *Ctrl + Shift + P*
-    - Digite `Python: Select Interpreter`
-    - Selecione *Enter interpreter path... - Find...*
-    - Cole o caminho do projeto, navegue até a pasta *Scripts* e selecione o arquivo *python.exe*
-    - Clique em *Select interpreter* e reinicie o VsCode
+  - Pressione as teclas *Ctrl + Shift + P*
+  - Digite `Python: Select Interpreter`
+  - Selecione *Enter interpreter path... - Find...*
+  - Cole o caminho do projeto, navegue até a pasta *Scripts* e selecione o arquivo *python.exe*
+  - Clique em *Select interpreter* e reinicie o VsCode
 
 Após instalado, vá até o navegador e digite ```http://127.0.0.1:5000``` ou clique no link
 ao executar pelo editor de código de sua preferência.
