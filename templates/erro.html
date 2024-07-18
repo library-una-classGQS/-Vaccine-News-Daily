@@ -1,8 +1,16 @@
 {% extends "template.html" %}
 {% block conteudo_body  %}
 
-<h1>Não foram encontrados resultados</h1>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul id="messages" class="list-unstyled__not-found">
+            {% for message in messages %}
+                <li class="alert alert-success">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
 
-<a href="{{ url_for('index') }}">Retornar à página inicial</a>
+<a href="{{ url_for('index') }}" class="return-btn">Retornar à página inicial</a>
 
 {% endblock %}
