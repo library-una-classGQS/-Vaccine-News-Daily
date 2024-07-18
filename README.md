@@ -13,7 +13,7 @@ Este projeto visa trazer as últimaas notícias sobre vacinas ao redor de todo o
 em sala, na universidade UNA Contagem no curso de Análise e Desenvolvimento de Sistemas.
 Por ser um projeto onde o Backend foi feito em python, decidimos utilizar o framework Flask
 com elementos HTML, CSS e JavaScript. Utilizamos o ORM SQLAlchemy para criação e manutenção
-do banco de dados e para gerenciamento de dependências utilizamos o 
+do banco de dados e para gerenciamento de dependências utilizamos o Poetry.
 </p>
 
 <p>
