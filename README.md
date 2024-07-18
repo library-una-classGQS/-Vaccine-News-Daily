@@ -72,7 +72,7 @@ O projeto utiliza o gerenciador de dependências <strong>Poetry</strong>. Aqui e
 
    > ``cd <caminho/para/o/projeto>``
 
-4. *Instalar as dependências do projeto (Caso não possua o Poetry ou o Python instalado,siga o passo a passo clicando [aqui¹](#instalação-do-python-e-do-poetry))*
+4. *Instalar as dependências do projeto (Caso não possua o Poetry ou o Python instalado,siga o passo a passo clicando [aqui](#instalação-do-python-e-do-poetry))*
 
    > ``poetry install``
 
@@ -118,7 +118,7 @@ O projeto utiliza o gerenciador de dependências <strong>Poetry</strong>. Aqui e
 Após instalado, vá até o navegador e digite ```http://127.0.0.1:5000``` ou clique no link
 ao executar pelo editor de código de sua preferência.
 
-### ¹ Instalação do python e do poetry
+### Instalação do python e do poetry
 
 - O interpretador Python pode ser instalado pelo [site oficial](https://www.python.org/downloads/)
 - Após instalar o python instale o Poetry:
