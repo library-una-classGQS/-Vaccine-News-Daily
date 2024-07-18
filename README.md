@@ -22,31 +22,18 @@ Abaixo alguns tópicos para melhor entendimento e visualização:
 <br>
 
 1. _Capturas de tela:_
-<br>
-<br>
+
 - Tela inicial:
-<br>
-<br>
 <img src="https://i.imgur.com/citYjaB.png" alt="Página Inicial" width="700">
-<br>
-<br>
+
 - Cuidados:
-<br>
-<br>
 <img src="https://i.imgur.com/gO17ZHl.png" alt="Página Inicial" width="700">
-<br>
-<br>
+
 - Login:
-<br>
-<br>
 <img src="https://i.imgur.com/2fqltEZ.png" alt="Página Inicial" width="700">
-<br>
-<br>
+
 - Fórum:
-<br>
-<br>
 <img src="https://i.imgur.com/XeLkut8.png" alt="Página Inicial" width="700">
-<br>
 <br>
 
 ### Instalação
@@ -54,7 +41,6 @@ Abaixo alguns tópicos para melhor entendimento e visualização:
 <p>
 O projeto utiliza o gerenciador de dependências <strong>Poetry</strong>. Aqui está o passo a passo da instalação:
 </p>
-<br>
 
 #### Windows:
 
