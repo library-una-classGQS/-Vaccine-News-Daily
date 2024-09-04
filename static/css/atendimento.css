@@ -1,0 +1,42 @@
+
+#video-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 45%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startButton {
+    background-color: #4CAF50;
+    color: white;
+    margin-left: 5%;
+}
+
+#hangupButton {
+    background-color: #f44336;
+    color: white;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.title_atendimento{
+    margin-left: 30%;
+}

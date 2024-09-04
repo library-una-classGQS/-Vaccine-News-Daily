@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+{%block conteudo_body  %}
+
+<main>
+    <h1 class="title_atendimento">Atendimento online</h1>
+
+    <div id="video-container">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+      </div>
+      <button id="startButton">Iniciar Chamada</button>
+      <button id="hangupButton" disabled>Encerrar Chamada</button>
+      <script src="../static/js/atendimento.js"></script>
+
+</main>
+
+
+{% endblock %}

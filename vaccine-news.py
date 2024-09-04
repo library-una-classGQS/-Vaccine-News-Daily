@@ -102,6 +102,10 @@ def forum():
 def contato():
     return render_template("contato.html", titulo="Ajuda")
 
+@app.route("/Atendimento")
+def atendimento():
+    return render_template("atendimento.html", titulo="Atendimento online")
+
 
 @app.route("/cuidados")
 def cuidados():
