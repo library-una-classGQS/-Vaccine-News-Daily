@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/carousel.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/atendimento.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/agendamento.css') }}">
   <title>{{ titulo }}</title>
 </head>
 
@@ -74,6 +75,7 @@
       <li><a class="amenu" href="{{ url_for('forum') }}">Forum</a></li>
       <li><a class="amenu" href="{{ url_for('contato') }}">Ajuda</a></li>
       <li><a class="amenu" href="{{ url_for('sobre') }}">Sobre</a></li>
+      <li><a class="amenu" href="{{ url_for('agendamento') }}">Agendamento online</a></li>
       <li><a class="amenu" href="{{ url_for('atendimento') }}">Atendimento online</a></li>
     </ul>
 

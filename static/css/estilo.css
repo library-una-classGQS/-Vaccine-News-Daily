@@ -79,8 +79,9 @@ footer {
   text-align: center;
   z-index: 5;
   height: auto;
-  position: relative;
-  top: 699px;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
   width: 100%;
 
 

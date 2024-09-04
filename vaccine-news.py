@@ -111,6 +111,10 @@ def atendimento():
 def cuidados():
     return render_template("cuidados.html", titulo="Cuidados")
 
+@app.route("/agendamento")
+def agendamento():
+    return render_template("agendamento.html", titulo="Agendamento")
+
 
 @app.route("/sobre")
 def sobre():
