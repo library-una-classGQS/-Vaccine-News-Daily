@@ -25,9 +25,11 @@ label {
 }
 
 select{
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 input[type="text"],
@@ -75,4 +77,29 @@ th {
 
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+.historico_consulta{
+    color: #f9f9f9;
+    top: 7px;
+    position: relative;
+    
+}
+
+.historico_consulta:hover{
+    color: #fff;
+}
+
+.div_historico{
+    background-color: #4CAF50;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin-left: 60vw;
+    margin-top: -40px;
+
+}
+
+.div_historico:hover{
+    background-color: #45a049;
 }

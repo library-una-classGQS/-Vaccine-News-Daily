@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+{%block conteudo_body  %}
+
+<div class="container_agendamento">
+
+    
+    <h2>Histórico de Consultas</h2>
+    <table id="historico-consultas">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Doutor</th>
+                <th>Descrição</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Histórico de consultas será inserido aqui -->
+        </tbody>
+    </table>
+</div>
+
+<script src="../static/js/agendamento.js"></script>
+
+{% endblock %}

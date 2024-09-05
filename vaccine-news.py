@@ -116,6 +116,11 @@ def agendamento():
     return render_template("agendamento.html", titulo="Agendamento")
 
 
+@app.route("/historico_consultas")
+def historico_consultas():
+    return render_template("historico_consultas.html", titulo="Historico de consultas")
+
+
 @app.route("/sobre")
 def sobre():
     return render_template("sobre.html", titulo="Sobre")
