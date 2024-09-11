@@ -14,5 +14,6 @@ app.config.from_object("config")
 db = SQLAlchemy(app)
 
 from projeto.models.usuario import Usuario
+from projeto.models.agendamento_model import Agendamento
 
 migrate = Migrate(app, db)

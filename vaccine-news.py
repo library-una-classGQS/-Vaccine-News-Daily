@@ -1,11 +1,13 @@
 import json
 import os
 from functools import wraps
+from datetime import datetime
 
 from flask import flash, g, redirect, render_template, request, session, url_for
 
 from projeto import app, db, migrate
 from projeto.models.usuario import Usuario
+from projeto.models.agendamento_model import Agendamento
 
 path = os.path.dirname(os.path.abspath(__file__))
 
@@ -102,6 +104,7 @@ def forum():
 def contato():
     return render_template("contato.html", titulo="Ajuda")
 
+
 @app.route("/Atendimento")
 def atendimento():
     return render_template("atendimento.html", titulo="Atendimento online")
@@ -110,6 +113,7 @@ def atendimento():
 @app.route("/cuidados")
 def cuidados():
     return render_template("cuidados.html", titulo="Cuidados")
+
 
 @app.route("/agendamento")
 def agendamento():
@@ -147,5 +151,32 @@ def erro():
     return render_template("erro.html")
 
 
+@app.route("/agendar", methods=["POST", ])
+def agendar():
+    ag_nome = request.form["ag_nome"]
+    ag_email = request.form["ag_email"]
+    especialidade = request.form["especialidade"]
+    sexo = request.form["sexo"]
+    data = request.form["data"]
+    hora = request.form["hora"]
+    agendamento_form = request.form["agendamento"]
+    descricao = request.form["descricao"]
+
+    novo_agendamento = Agendamento(nome=ag_nome,
+                                   email=ag_email,
+                                   especialidade=especialidade,
+                                   sexo=sexo,
+                                   data=data,
+                                   hora=hora,
+                                   agendamento_form=agendamento_form,
+                                   descricao=descricao)
+    db.session.add(novo_agendamento)
+    db.session.commit()
+
+    return redirect(url_for('index'))
+
+
 if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
     app.run(debug=True)

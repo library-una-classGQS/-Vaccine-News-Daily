@@ -4,6 +4,7 @@ import websockets
 # Lista para armazenar as conexões WebSocket ativas
 connected_clients = []
 
+
 async def handler(websocket, path):
     # Adiciona o novo cliente à lista de conexões
     connected_clients.append(websocket)
@@ -17,6 +18,7 @@ async def handler(websocket, path):
     finally:
         # Remove o cliente da lista quando ele desconectar
         connected_clients.remove(websocket)
+
 
 # Inicia o servidor WebSocket na porta 8080
 start_server = websockets.serve(handler, "localhost", 8080)

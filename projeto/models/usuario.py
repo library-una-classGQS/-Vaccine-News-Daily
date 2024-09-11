@@ -6,7 +6,7 @@ class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True, nullable=False, autoincrement=True)
     nome = db.Column(db.String(20), nullable=False)
     cpf_cnpj = db.Column(db.BigInteger, nullable=False)
-    email = db.Column(db.String(20), nullable=False)
+    email = db.Column(db.String(100), nullable=False)
     senha = db.Column(db.String(20), nullable=False)
 
     def __init__(self, nome, cpf_cnpj, email, senha):

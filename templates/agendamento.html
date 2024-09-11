@@ -1,82 +1,83 @@
 {% extends "template.html" %}
-{%block conteudo_body  %}
+{% block conteudo_body  %}
 
 <div class="container_agendamento">
     <h1>Agendamento de Consultas</h1>
 
-    <div class="div_historico"><a class= "historico_consulta" href="{{ url_for('historico_consultas') }}">Historico de consultas</a></div>
+    <div class="div_historico">
+        <a class= "historico_consulta" href="{{ url_for('historico_consultas') }}">Historico de consultas</a>
+    </div>
 
-    <form id="agendamento-form">
+    <form id="agendamento-form" action="{{ url_for('agendar') }}" method="post" enctype="multipart/form-data">
         <div class="form-group_agendar">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="ag_nome" required>
         </div>
 
         <div class="form-group_agendar">
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="ag_email" required>
         </div>
 
         <div class="form-group_agendar">
             <label for="especialidade">Especialidade:</label>
             <select type="text" id="especialidade" name="especialidade" required>
-            <option value=""></option>
-                            <option value="alergia">Alergia e Imunologia</option>
-                            <option value="anestesiologia">Anestesiologia</option>
-                            <option value="angiologia">Angiologia</option>
-                            <option value="cardiologia">Cardiologia</option>
-                            <option value="cirurgia_cardiovascular">Cirurgia Cardiovascular</option>
-                            <option value="cirurgia_cabeca">Cirurgia de Cabeça e Pescoço</option>
-                            <option value="cirurgia_geral">Cirurgia Geral</option>
-                            <option value="cirurgia_oncologica">Cirurgia Oncológica</option>
-                            <option value="cirurgia_pediatrica">Cirurgia Pediátrica</option>
-                            <option value="cirurgia_plástica">Cirurgia Plástica</option>
-                            <option value="caminhao">cirurgia_torácica</option>
-                            <option value="cirurgia_vascular">Cirurgia Vascular</option>
-                            <option value="clinica_medica">Clínica Médica</option>
-                            <option value="dermatologia">Dermatologia</option>
-                            <option value="endocrinologia">Endocrinologia</option>
-                            <option value="endoscopia">Endoscopia</option>
-                            <option value="gastroenterologia">Gastroenterologia</option>
-                            <option value="geriatria">Geriatria</option>
-                            <option value="genética_medica">Genética Médica</option>
-                            <option value="ginecologia_obstetricia">Ginecologia e Obstetrícia</option>
-                            <option value="hematologia_emoterapia">Hematologia e Hemoterapia</option>
-                            <option value="hepatologia">Hepatologia</option>
-                            <option value="infectologia">Infectologia</option>
-                            <option value="mastologia">mastologia</option>
-                            <option value="medicina_trabalho">Medicina do Trabalho</option>
-                            <option value="medicina_familia">Medicina de Família e Comunidade</option>
-                            <option value="medicina-intensiva">Medicina Intensiva</option>
-                            <option value="medicina_nuclear">Medicina Nuclear</option>
-                            <option value="medicina_preventiva">Medicina Preventiva e Social</option>
-                            <option value="nefrologia">Nefrologia</option>
-                            <option value="neurocirurgia">Neurocirurgia</option>
-                            <option value="neurologia">Neurologia</option>
-                            <option value="nutrologia">Nutrologia</option>
-                            <option value="oftalmologia">Oftalmologia</option>
-                            <option value="oncologia">Oncologia</option>
-                            <option value="ortopedia_traumatologia">Ortopedia e Traumatologia</option>
-                            <option value="otorrinolaringologia">Otorrinolaringologia</option>
-                            <option value="patologia">Patologia</option>
-                            <option value="pediatria">Pediatria</option>
-                            <option value="pneumologia">Pneumologia</option>
-                            <option value="psiquiatria">Psiquiatria</option>
-                            <option value="radiologia_diagnóstico_imagem">Radiologia e Diagnóstico por Imagem</option>
-                            <option value="radioterapia">Radioterapia</option>
-                            <option value="reumatologia">Reumatologia</option>
-                            <option value="urologia">Urologia</option>
-
-                    </select>
+                <option value=""></option>
+                <option value="alergia">Alergia e Imunologia</option>
+                <option value="anestesiologia">Anestesiologia</option>
+                <option value="angiologia">Angiologia</option>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="cirurgia_cardiovascular">Cirurgia Cardiovascular</option>
+                <option value="cirurgia_cabeca">Cirurgia de Cabeça e Pescoço</option>
+                <option value="cirurgia_geral">Cirurgia Geral</option>
+                <option value="cirurgia_oncologica">Cirurgia Oncológica</option>
+                <option value="cirurgia_pediatrica">Cirurgia Pediátrica</option>
+                <option value="cirurgia_plástica">Cirurgia Plástica</option>
+                <option value="caminhao">cirurgia_torácica</option>
+                <option value="cirurgia_vascular">Cirurgia Vascular</option>
+                <option value="clinica_medica">Clínica Médica</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="endocrinologia">Endocrinologia</option>
+                <option value="endoscopia">Endoscopia</option>
+                <option value="gastroenterologia">Gastroenterologia</option>
+                <option value="geriatria">Geriatria</option>
+                <option value="genética_medica">Genética Médica</option>
+                <option value="ginecologia_obstetricia">Ginecologia e Obstetrícia</option>
+                <option value="hematologia_emoterapia">Hematologia e Hemoterapia</option>
+                <option value="hepatologia">Hepatologia</option>
+                <option value="infectologia">Infectologia</option>
+                <option value="mastologia">mastologia</option>
+                <option value="medicina_trabalho">Medicina do Trabalho</option>
+                <option value="medicina_familia">Medicina de Família e Comunidade</option>
+                <option value="medicina-intensiva">Medicina Intensiva</option>
+                <option value="medicina_nuclear">Medicina Nuclear</option>
+                <option value="medicina_preventiva">Medicina Preventiva e Social</option>
+                <option value="nefrologia">Nefrologia</option>
+                <option value="neurocirurgia">Neurocirurgia</option>
+                <option value="neurologia">Neurologia</option>
+                <option value="nutrologia">Nutrologia</option>
+                <option value="oftalmologia">Oftalmologia</option>
+                <option value="oncologia">Oncologia</option>
+                <option value="ortopedia_traumatologia">Ortopedia e Traumatologia</option>
+                <option value="otorrinolaringologia">Otorrinolaringologia</option>
+                <option value="patologia">Patologia</option>
+                <option value="pediatria">Pediatria</option>
+                <option value="pneumologia">Pneumologia</option>
+                <option value="psiquiatria">Psiquiatria</option>
+                <option value="radiologia_diagnóstico_imagem">Radiologia e Diagnóstico por Imagem</option>
+                <option value="radioterapia">Radioterapia</option>
+                <option value="reumatologia">Reumatologia</option>
+                <option value="urologia">Urologia</option>
+            </select>
         </div>
 
         <div class="form-group_agendar">
             <label for="sexo">Sexo do especialista:</label>
             <select type="text" id="sexo" name="sexo" required>
                 <option value=""></option>
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                    </select>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
         </div>
 
         <div class="form-group_agendar">
@@ -93,9 +94,9 @@
             <label for="agendamento">Tipo de Agendamento:</label>
             <select type="text" id="agendamento" name="agendamento" required>
                 <option value=""></option>
-                            <option value="presencial">Presencial</option>
-                            <option value="online">Online</option>
-                    </select>
+                <option value="presencial">Presencial</option>
+                <option value="online">Online</option>
+            </select>
         </div>
 
         <div class="form-group_agendar">
@@ -103,11 +104,11 @@
             <textarea id="descricao" name="descricao" rows="4" required></textarea>
         </div>
 
-        <button type="submit">Agendar Consulta</button>
+        <input class="div_historico" type="submit" value="Agendar Consulta"><br><br>
     </form>
 
 </div>
 
-<script src="../static/js/agendamento.js"></script>
+<script src="agendamento.js"></script>
 
 {% endblock %}
