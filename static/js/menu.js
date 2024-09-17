@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     var categoriasLink = document.getElementById("categorias");
     var submenuCategorias = document.getElementById("submenu-categorias");
 
@@ -7,3 +7,15 @@ document.addEventListener("DOMContentLoaded", function() {
         submenuCategorias.classList.toggle("show");
     });
 });
+*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    var agendamentosLink = document.querySelector(".amenu[href='#']");
+    var submenu = agendamentosLink.nextElementSibling;
+
+    agendamentosLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        submenu.classList.toggle("show");
+    });
+});
+

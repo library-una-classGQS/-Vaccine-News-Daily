@@ -27,27 +27,27 @@
     </form>
 
     {% if not g.logado %}
-     <a class="img_login"><img src="{{ url_for('static', filename='img/login.com' )}}" alt=""></a>
-      <div id="login-form" class="login-form">
-        <form action="{{ url_for('autenticar') }}" method="post">
-          <label for="username">Usuário:</label><br>
-          <input type="text" id="username" name="username"><br>
-          <label for="password">Senha:</label><br>
-          <input type="password" id="password" name="password"><br>
-          <input type="submit" value="Entrar">
-          <a class="inscrever" href="{{ url_for('inscrever') }}"> Inscreva-se</a>
-        </form>
-      </div>
-    
+    <a class="img_login"><img src="{{ url_for('static', filename='img/login.com' )}}" alt=""></a>
+    <div id="login-form" class="login-form">
+      <form action="{{ url_for('autenticar') }}" method="post">
+        <label for="username">Usuário:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Senha:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Entrar">
+        <a class="inscrever" href="{{ url_for('inscrever') }}"> Inscreva-se</a>
+      </form>
+    </div>
+
 
     {% else %}
-      <a class="img_login"><img src="{{ url_for('static', filename='img/login.com') }}" alt=""></a>
-      <div id="logado" class="login-form">
-        <a class="nome_usuario">Nome: {{ g.nome }}</a><br><br>
-        <a class="nome_usuario">E-mail: {{ g.email }}</a><br><br>
-        <a class="nome_usuario">CPF/CNPJ: {{ g.cpf_cnpj }}</a><br><br>
-        <a class="btn_logout" href="{{ url_for('logout') }}">Logout</a>
-      </div>
+    <a class="img_login"><img src="{{ url_for('static', filename='img/login.com') }}" alt=""></a>
+    <div id="logado" class="login-form">
+      <a class="nome_usuario">Nome: {{ g.nome }}</a><br><br>
+      <a class="nome_usuario">E-mail: {{ g.email }}</a><br><br>
+      <a class="nome_usuario">CPF/CNPJ: {{ g.cpf_cnpj }}</a><br><br>
+      <a class="btn_logout" href="{{ url_for('logout') }}">Logout</a>
+    </div>
 
     {% endif %}
 
@@ -75,7 +75,13 @@
       <li><a class="amenu" href="{{ url_for('forum') }}">Forum</a></li>
       <li><a class="amenu" href="{{ url_for('contato') }}">Ajuda</a></li>
       <li><a class="amenu" href="{{ url_for('sobre') }}">Sobre</a></li>
-      <li><a class="amenu" href="{{ url_for('agendamento') }}">Agendamento online</a></li>
+      <li>
+        <a class="amenu" href="#">Agendamentos</a>
+        <ul class="submenu">
+          <li><a class="amenu" href="{{ url_for('agendamento_presencial') }}">Agendamento Presencial</a></li>
+          <li><a class="amenu" href="{{ url_for('agendamento_online') }}">Agendamento Online</a></li>
+        </ul>
+      </li>
       <li><a class="amenu" href="{{ url_for('atendimento') }}">Atendimento online</a></li>
     </ul>
 
@@ -86,15 +92,15 @@
   {% endblock %}
 
   {% if g.logado %}
-    {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        <ul id="messages" class="list-unstyled__success">
-          {% for message in messages %}
-            <li class="alert alert-success">{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %}
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul id="messages" class="list-unstyled__success">
+    {% for message in messages %}
+    <li class="alert alert-success">{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endwith %}
   {% endif %}
 
   <a id="support-button" class="support-button"><img src="{{ url_for('static', filename='img/suporte.png') }}"

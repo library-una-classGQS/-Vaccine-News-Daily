@@ -8,7 +8,7 @@ from flask import flash, g, redirect, render_template, request, session, url_for
 from projeto import app, db, migrate
 from projeto.models.usuario import Usuario
 from projeto.models.agendamento_model import Agendamento
-
+    
 path = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -115,9 +115,15 @@ def cuidados():
     return render_template("cuidados.html", titulo="Cuidados")
 
 
-@app.route("/agendamento")
-def agendamento():
-    return render_template("agendamento.html", titulo="Agendamento")
+@app.route("/agendamento_online")
+def agendamento_online():
+    return render_template("agendamento_online.html", titulo="agendamento_online")
+
+
+
+@app.route("/agendamento_presencial")
+def agendamento_presencial():
+    return render_template("agendamento_presencial.html", titulo="Agendamento Presencial")
 
 
 @app.route("/historico_consultas")

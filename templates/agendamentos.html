@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+{%block conteudo_body %}
+
+<h2 class="h2_atendeimento"> Selecione o Atendimento Desejado</h2>
+<div class="selecionar_tipo_consulta">
+    <a href="../html/inicio.html" class= "a_condominios">
+        <div class="circle">
+            <div class="circle-content">
+                
+                <h3 class="h3_agendamentos">Agendamento Presencial</h3>
+            </div>
+        </div>
+    </a>
+
+    <a href="{{ url_for('agendamento_online') }}" class= "a_condominios">
+        <div class="circle">
+            <div class="circle-content">
+                
+                <h3 class="h3_agendamentos">Agendamento Online</h3>
+            </div>
+        </div>
+    </a>
+
+{% endblock %}

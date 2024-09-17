@@ -74,31 +74,31 @@ ul{
     cursor: pointer;
 }
 
+.amenu:hover {
+    display: block;
+}
 
-
-
-
-
-
+/* Estilo básico para o submenu */
 .submenu {
     display: none;
     position: absolute;
     background-color: #90ee90;
     padding: 10px;
     border: 1px solid #ccc;
-    z-index: 1;
+    left: 100%;
+    top: 0;
+    margin-top: 275px;
 }
 
-.amenu:hover.submenu {
+li:hover .submenu {
     display: block;
 }
 
-.submenu li {
-    margin-bottom: 10px;
-}
-
+/* Estilos adicionais para os links do submenu */
 .submenu a {
     color: #333;
+    padding: 10px;
+    display: block;
 }
 
 .submenu a:hover {
@@ -106,13 +106,6 @@ ul{
     color: white;
 }
 
-.submenu {
-    display: none;
-}
-
-.submenu.show {
-    display: block;
-}
 
 
 

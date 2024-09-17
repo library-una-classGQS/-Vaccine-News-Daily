@@ -74,6 +74,8 @@ function realizarAgendamento(nome, email, data, hora, especialidade, sexo, descr
         headers: {
             'Content-Type': 'application/json',
         },
+
+        
         body: JSON.stringify({ nome, email, data, hora, especialidade, sexo, descricao }),
     })
     .then(response => response.json())

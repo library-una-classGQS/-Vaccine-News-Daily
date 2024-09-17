@@ -2,7 +2,7 @@
 {% block conteudo_body  %}
 
 <div class="container_agendamento">
-    <h1>Agendamento de Consultas</h1>
+    <h1>Agendamento de Consultas Online</h1>
 
     <div class="div_historico">
         <a class= "historico_consulta" href="{{ url_for('historico_consultas') }}">Historico de consultas</a>
@@ -89,7 +89,7 @@
             <label for="hora">Hora:</label>
             <input type="time" id="hora" name="hora" required>
         </div>
-
+        <!--
         <div class="form-group_agendar">
             <label for="agendamento">Tipo de Agendamento:</label>
             <select type="text" id="agendamento" name="agendamento" required>
@@ -98,6 +98,7 @@
                 <option value="online">Online</option>
             </select>
         </div>
+        -->
 
         <div class="form-group_agendar">
             <label for="descricao">Descrição:</label>

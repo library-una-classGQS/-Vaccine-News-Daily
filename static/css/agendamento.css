@@ -103,3 +103,51 @@ tbody tr:nth-child(even) {
 .div_historico:hover{
     background-color: #45a049;
 }
+
+/*pagina para selecionar o tipo de agendamento */
+
+
+.h2_atendeimento{
+    color: #333;
+    position: relative;
+    margin-top: 9vw;
+    margin-left: 35vw;
+}
+
+.selecionar_tipo_consulta{
+    margin-top: 2vw;
+    display: flex;
+    margin-left: 33vw;
+    position: relative;
+    
+
+}
+
+
+
+.a_condominios{
+    
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-bottom: 10;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.a_condominios:hover{
+
+    background-color: #45a049;
+    color: #f2f2f2;
+    place-items: center;
+}
+
+.h3_agendamentos{
+    position: relative;
+    margin-top: 75px;
+
+}
