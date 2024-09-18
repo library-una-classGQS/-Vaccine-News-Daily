@@ -115,15 +115,9 @@ def cuidados():
     return render_template("cuidados.html", titulo="Cuidados")
 
 
-@app.route("/agendamento_online")
-def agendamento_online():
-    return render_template("agendamento_online.html", titulo="agendamento_online")
-
-
-
-@app.route("/agendamento_presencial")
-def agendamento_presencial():
-    return render_template("agendamento_presencial.html", titulo="Agendamento Presencial")
+@app.route("/agendamentos")
+def agendamentos():
+    return render_template("agendamentos.html", titulo="Agendamentos")
 
 
 @app.route("/historico_consultas")

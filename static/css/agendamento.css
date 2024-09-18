@@ -151,3 +151,22 @@ tbody tr:nth-child(even) {
     margin-top: 75px;
 
 }
+
+.input_agendar{
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin-left: 1vw;
+    margin-top: -40px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.input_agendar:hover{
+    background-color: #45a049;
+    color: #f2f2f2;
+}

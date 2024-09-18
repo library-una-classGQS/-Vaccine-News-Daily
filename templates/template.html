@@ -72,18 +72,12 @@
     <ul>
       <li><a class="amenu" href="{{ url_for('index') }}">Inicio</a></li>
       <li><a class="amenu" href="{{ url_for('cuidados') }}">Cuidados</a></li>
+      <li><a class="amenu" href="{{ url_for('agendamentos') }}">Agendamentos</a></li>
       <li><a class="amenu" href="{{ url_for('forum') }}">Forum</a></li>
       <li><a class="amenu" href="{{ url_for('contato') }}">Ajuda</a></li>
       <li><a class="amenu" href="{{ url_for('sobre') }}">Sobre</a></li>
-      <li>
-        <a class="amenu" href="#">Agendamentos</a>
-        <ul class="submenu">
-          <li><a class="amenu" href="{{ url_for('agendamento_presencial') }}">Agendamento Presencial</a></li>
-          <li><a class="amenu" href="{{ url_for('agendamento_online') }}">Agendamento Online</a></li>
-        </ul>
-      </li>
-      <li><a class="amenu" href="{{ url_for('atendimento') }}">Atendimento online</a></li>
-    </ul>
+      
+    
 
     <script src="../static/js/email.js"></script>
   </nav>
