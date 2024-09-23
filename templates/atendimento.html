@@ -11,8 +11,119 @@
       <button id="startButton">Iniciar Chamada</button>
       <button id="hangupButton" disabled>Encerrar Chamada</button>
       <input type="file" id="imageInput" accept="image/*">
+      <button class="gerador_medico" id="btn_receita">Receita</button>
+      <button class="gerador_medico" id="btn_atestado">Atestado</button>
+      
+      <!-- FORM DO ATESTADO -->
+      
+        <form id="form_atestado"  method="post" enctype="multipart/form-data" style="display: none;">
+          <fieldset>
+            <legend>Informações do Atestado</legend>
+          <div class="form-group_agendar">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="ag_nome" required>
+          </div>
+  
+          
+          <div class="form-group_agendar">
+            <label for="nome">CID:</label>
+            <input type="text" id="nome" name="ag_nome" required>
+        </div>
+  
+        <div class="form-group_agendar">
+          <label for="nome">tempo:</label>
+          <input type="text" id="nome" name="ag_nome" required>
+      </div>
+  
+          <div class="form-group_agendar" >
+              <label for="data">Data:</label>
+              <label class="datas" id = "data"></label>
+              <label class="horas"for="hora">Hora:</label>
+              <label class="datas" id = "hora"></label>
+          </div>
+  
+          
+          <br>
+          <input class="input_agendar" type="submit" value="Gerar Atestado"><br><br>
+        </fieldset>
+        </form>
+     
+      
+
+      <!-- FORM DA RECEITA -->
+      <form id="form-receita" style="display: none;">
+        <!-- Informações do Paciente -->
+        <fieldset>
+            <legend>Informações do Paciente</legend>
+            <div class="form-group">
+                <label for="nome-paciente">Nome do Paciente:</label>
+                <input type="text" id="nome-paciente" name="nome-paciente" required>
+            </div>
+            <div class="form-group">
+                <label for="idade-paciente">Idade:</label>
+                <input type="number" id="idade-paciente" name="idade-paciente" required>
+            </div>
+            <div class="form-group">
+                <label for="sexo-paciente">Sexo:</label>
+                <select id="sexo-paciente" name="sexo-paciente" required>
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- Informações da Receita -->
+        <fieldset>
+            <legend>Informações da Receita</legend>
+            <div class="form-group">
+                <label for="data-receita">Data da Receita:</label>
+                <input type="date" id="data-receita" name="data-receita" required>
+            </div>
+            <div class="form-group">
+                <label for="medicamento">Medicamento(s):</label>
+                <textarea id="medicamento" name="medicamento" rows="4" placeholder="Nome(s) do(s) medicamento(s)" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="dosagem">Dosagem:</label>
+                <input type="text" id="dosagem" name="dosagem" placeholder="Ex: 500mg, 2x ao dia" required>
+            </div>
+            <div class="form-group">
+                <label for="instrucoes">Instruções de Uso:</label>
+                <textarea id="instrucoes" name="instrucoes" rows="3" placeholder="Ex: Tomar após as refeições" required></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Informações do Médico -->
+        <fieldset>
+            <legend>Informações do Médico</legend>
+            <div class="form-group">
+                <label for="nome-medico">Nome do Médico:</label>
+                <input type="text" id="nome-medico" name="nome-medico" required>
+            </div>
+            <div class="form-group">
+                <label for="crm">CRM:</label>
+                <input type="text" id="crm" name="crm" required>
+            </div>
+            <div class="form-group">
+                <label for="especialidade">Especialidade:</label>
+                <input type="text" id="especialidade" name="especialidade" required>
+            </div>
+        </fieldset>
+
+        <!-- Botão de Envio -->
+        <button type="submit">Gerar Receita</button>
+    </form>
+
+
 
       <script src="../static/js/atendimento.js"></script>
+      <script src="../static/js/datahora.js"></script>
+      <script src="../static/js/mostrar_forms.js"></script>
+
+
+      
 
 </main>
 

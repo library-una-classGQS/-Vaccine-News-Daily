@@ -40,3 +40,32 @@ button:disabled {
 .title_atendimento{
     margin-left: 30%;
 }
+
+
+.gerador_medico{
+    background-color: #4CAF50;
+    color: white;
+    margin-left: 5%;
+}
+
+.gerador_medico:hover{
+    background-color: #45a049;
+    color: #f2f2f2;
+}
+
+.datas{
+    position: relative;
+    margin-left: 60px;
+    margin-top: -30px;
+
+}
+
+.horas{
+    margin-left: 180px;
+    margin-top: -30px;
+}
+
+#hora{
+    margin-left: 240px;
+}
+
