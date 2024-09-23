@@ -160,6 +160,7 @@ def agendar():
     data = request.form["data"]
     hora = request.form["hora"]
     agendamento_form = request.form["agendamento"]
+    unidade = request.form["unidade"]
     descricao = request.form["descricao"]
 
     novo_agendamento = Agendamento(nome=ag_nome,
@@ -169,6 +170,7 @@ def agendar():
                                    data=data,
                                    hora=hora,
                                    agendamento_form=agendamento_form,
+                                   unidade=unidade,
                                    descricao=descricao)
     db.session.add(novo_agendamento)
     db.session.commit()
