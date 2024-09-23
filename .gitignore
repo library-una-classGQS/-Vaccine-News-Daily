@@ -11,3 +11,7 @@
 
 # Arquivos em cache
 **/__pycache__/
+/migrations/__pycache__/
+/projeto/__pycache__/
+/projeto/models/__pycache__/
+/projeto/views/__pycache__/
