@@ -135,6 +135,11 @@ def inscrever():
     return render_template("inscrever.html", titulo="inscrever")
 
 
+@app.route("/cadastrar_medico")
+def cadastrar_medico():
+    return render_template("cadastrar_medico.html", titulo="Cadastrar medico")
+
+
 @app.route("/login")
 def login():
     return render_template("login.html")
