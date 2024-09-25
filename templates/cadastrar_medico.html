@@ -5,18 +5,23 @@
     <h1>Cadastro de Medicos</h1>
 
     <div class="div_historico">
-        <a class="historico_consulta" href="{{ url_for('historico_consultas') }}">Medicos cadastrados</a>
+        <a class="historico_consulta" href="{{ url_for('medicos') }}">Medicos cadastrados</a>
     </div>
 
     <form id="agendamento-form" action="{{ url_for('agendar') }}" method="post" enctype="multipart/form-data">
         <div class="form-group_agendar">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="ag_nome" required>
+            <input type="text" id="nome" name="med_nome" required>
+        </div>
+
+        <div class="form-group_agendar">
+            <label for="nome">Telefone:</label>
+            <input type="text" id="telefone" name="med_telefone" placeholder="(xx) xxxxx-xxxx" required>
         </div>
 
         <div class="form-group_agendar">
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="ag_email" required>
+            <input type="email" id="email" name="med_email" required>
         </div>
 
         <div class="form-group_agendar">

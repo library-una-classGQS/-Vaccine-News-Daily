@@ -140,6 +140,11 @@ def cadastrar_medico():
     return render_template("cadastrar_medico.html", titulo="Cadastrar medico")
 
 
+@app.route("/medicos")
+def medicos():
+    return render_template("medicos.html", titulo="Médicos")
+
+
 @app.route("/login")
 def login():
     return render_template("login.html")
