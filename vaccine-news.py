@@ -32,7 +32,7 @@ def before_request():
 
 @app.route("/")
 def index():
-    return render_template("index.html", titulo="Vaccine News | Home")
+    return render_template("index.html", titulo="SUS+ Conecta | Home")
 
 
 @app.route("/pesquisar", methods=["POST"])

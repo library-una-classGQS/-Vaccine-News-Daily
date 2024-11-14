@@ -18,7 +18,7 @@
       <img src="{{ url_for('static', filename='img/cruz.png' )}}" />
     </a>
     <a href="{{ url_for('index') }}" class="titulo">
-      <h1>Vaccine News Daily</h1>
+      <h1 class="titulo_principal">SUS+ Conecta</h1>
     </a>
     <form id="search-form" action="{{ url_for('pesquisar') }}" method="post">
       <input type="search" id="search-input" name="search-input" placeholder="Pesquisar...">
@@ -27,7 +27,7 @@
     </form>
 
     {% if not g.logado %}
-    <a class="img_login"><img src="{{ url_for('static', filename='img/login.com' )}}" alt=""></a>
+    <a class="img_login"><img src="{{ url_for('static', filename='img/login1.png' )}}" alt=""></a>
     <div id="login-form" class="login-form">
       <form action="{{ url_for('autenticar') }}" method="post">
         <label for="username">Usuário:</label><br>

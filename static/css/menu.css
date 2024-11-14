@@ -44,7 +44,7 @@ input[type="checkbox"]:checked ~nav{
 }
 
 ul{
-    top: 100px;
+    top: 110px;
     position: absolute;
     width: 100%;
 }
@@ -69,7 +69,7 @@ ul{
     padding: 15px;
     position: absolute;
     z-index: 5;
-    top: 60px;
+    top: 65px;
     position: fixed;
     cursor: pointer;
 }
