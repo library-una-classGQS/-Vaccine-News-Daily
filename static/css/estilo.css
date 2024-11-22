@@ -24,7 +24,7 @@ a:hover {
 }
 
 header {
-  background-color: #3CB371;
+  background-color: #1976D2;
   color: white;
   padding: 1rem;
   position: fixed;
@@ -33,13 +33,20 @@ header {
 
 }
 
+.logo_principal{
+  position: absolute;
+  margin-top: -26px;
+  margin-left: -20px;
+  width: 120px;
+}
+
 .header h1 {
   margin: 0;
   font-size: 1.5rem;
 }
 
 .titulo_principal{
-  margin-left: -30px;
+  margin-left: 45px;
   margin-top: -4px;
   color: #FFF;
 }
@@ -49,6 +56,8 @@ header {
   margin-left: 40px;
 
 }
+
+
 
 
 main {
@@ -152,7 +161,7 @@ margin-left: 650px;
 }
 
 #search-button {
-  background-color: #3CB371;
+  background-color: #4FC3F7;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -161,7 +170,7 @@ margin-left: 650px;
 }
 
 #search-button:hover {
-  background-color: #2E865F;
+  background-color: #1976D2 ;
 }
 
 #search-results {
