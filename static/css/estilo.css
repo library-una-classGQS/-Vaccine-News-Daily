@@ -24,7 +24,7 @@ a:hover {
 }
 
 header {
-  background-color: #1976D2;
+  background-color: #25D366;
   color: white;
   padding: 1rem;
   position: fixed;
@@ -35,9 +35,9 @@ header {
 
 .logo_principal{
   position: absolute;
-  margin-top: -26px;
+  margin-top: -119px;
   margin-left: -20px;
-  width: 120px;
+  width: 215px;
 }
 
 .header h1 {
@@ -161,7 +161,7 @@ margin-left: 650px;
 }
 
 #search-button {
-  background-color: #4FC3F7;
+  background-color: #3CB371;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -170,7 +170,7 @@ margin-left: 650px;
 }
 
 #search-button:hover {
-  background-color: #1976D2 ;
+  background-color: #2E865F;
 }
 
 #search-results {
