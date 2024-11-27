@@ -61,7 +61,14 @@ button:disabled {
 }
 
 .horas{
+    position: relative;
     margin-left: 180px;
+    margin-top: -30px;
+}
+
+.hora_atual{
+    position: relative;
+    margin-left: 240px;
     margin-top: -30px;
 }
 

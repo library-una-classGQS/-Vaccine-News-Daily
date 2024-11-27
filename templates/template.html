@@ -26,8 +26,10 @@
       <ul id="search-results"></ul>
     </form>
 
-    {% if not g.logado %}
     <a class="img_login"><img src="{{ url_for('static', filename='img/login1.png' )}}" alt=""></a>
+
+    {% if not g.logado %}
+    
     <div id="login-form" class="login-form">
       <form action="{{ url_for('autenticar') }}" method="post">
         <label for="username">Usuário:</label><br>
@@ -41,7 +43,7 @@
 
 
     {% else %}
-    <a class="img_login"><img src="{{ url_for('static', filename='img/login.com') }}" alt=""></a>
+  <!--  <a class="img_login"><img src="{{ url_for('static', filename='img/login.com') }}" alt=""></a>-->
     <div id="logado" class="login-form">
       <a class="nome_usuario">Nome: {{ g.nome }}</a><br><br>
       <a class="nome_usuario">E-mail: {{ g.email }}</a><br><br>
