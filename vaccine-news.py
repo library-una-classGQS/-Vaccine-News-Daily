@@ -95,7 +95,7 @@ def autenticar():
 
 
 @app.route("/forum")
-@login_required
+
 def forum():
     return render_template("forum.html", titulo="Fórum")
 
