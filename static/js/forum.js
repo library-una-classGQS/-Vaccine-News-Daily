@@ -1,5 +1,5 @@
 
-document.getElementById('postForum').addEventListener('submit', function(event) {
+document.getElementById('postForum').addEventListener('submit', function (event) {
     event.preventDefault();
 
     const questionInput = document.getElementById('question');
@@ -22,21 +22,20 @@ document.getElementById('postForum').addEventListener('submit', function(event) 
 
     if (imageInput.files && imageInput.files[0]) {
         const reader = new FileReader();
-        reader.onload = function(e) {
+        reader.onload = function (e) {
             const img = document.createElement('img');
             img.src = e.target.result;
             postDiv.appendChild(img);
-        }
+        };
         reader.readAsDataURL(imageInput.files[0]);
     }
 
-    const responseButton = document.createElement('button');
-    responseButton.textContent = 'Responder';
-    responseButton.addEventListener('click', function() {
-        toggleResponseForm(responseForm);
-    });
-    postDiv.appendChild(responseButton);
+    // Div que conterá respostas
+    const responsesDiv = document.createElement('div');
+    responsesDiv.classList.add('responses');
+    postDiv.appendChild(responsesDiv);
 
+    // Formulário de resposta
     const responseForm = document.createElement('form');
     responseForm.classList.add('response-form');
     responseForm.style.display = 'none';
@@ -51,7 +50,7 @@ document.getElementById('postForum').addEventListener('submit', function(event) 
     responseSubmit.textContent = 'Enviar';
     responseForm.appendChild(responseSubmit);
 
-    responseForm.addEventListener('submit', function(event) {
+    responseForm.addEventListener('submit', function (event) {
         event.preventDefault();
         addResponse(responsesDiv, responseInput.value);
         responseInput.value = '';
@@ -60,9 +59,13 @@ document.getElementById('postForum').addEventListener('submit', function(event) 
 
     postDiv.appendChild(responseForm);
 
-    const responsesDiv = document.createElement('div');
-    responsesDiv.classList.add('responses');
-    postDiv.appendChild(responsesDiv);
+    // Botão de responder
+    const responseButton = document.createElement('button');
+    responseButton.textContent = 'Responder';
+    responseButton.addEventListener('click', function () {
+        toggleResponseForm(responseForm);
+    });
+    postDiv.appendChild(responseButton);
 
     postsContainer.appendChild(postDiv);
 
