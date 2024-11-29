@@ -58,6 +58,7 @@ def cadastrar():
     nome = request.form["nome"]
     email = request.form["email"]
     cpf_cnpj = request.form["cpf_cnpj"]
+    cartao_sus = request.form["cartao_sus"]
     senha = request.form["senha"]
 
     usuario = (Usuario.query.filter_by(email=email).first() or Usuario.query.filter_by(cpf_cnpj=cpf_cnpj).first())
@@ -66,7 +67,7 @@ def cadastrar():
         flash(f"Usuário já cadastrado!")
         return redirect(url_for("inscrever"))
 
-    novo_usuario = Usuario(nome=nome, email=email, cpf_cnpj=cpf_cnpj, senha=senha)
+    novo_usuario = Usuario(nome=nome, email=email, cpf_cnpj=cpf_cnpj, cartao_sus= cartao_sus, senha=senha)
     db.session.add(novo_usuario)
     db.session.commit()
 
@@ -87,6 +88,7 @@ def autenticar():
         session["usuario_logado"] = True
         session["nome"] = usuario.nome
         session["email"] = usuario.email
+        session["cartao_sus"] = usuario.cartao_sus
         session["cpf_cnpj"] = usuario.cpf_cnpj
 
         flash(f"Bem-vindo {session['nome']}")
@@ -95,7 +97,7 @@ def autenticar():
 
 
 @app.route("/forum")
-
+@login_required
 def forum():
     return render_template("forum.html", titulo="Fórum")
 

@@ -790,7 +790,7 @@ h1 {
 /* fim div dos creditos*/
 
 /*forum */
-
+/*
 .container_forum {
   max-width: 1300px;
   margin: 20px auto;
@@ -852,8 +852,49 @@ h1 {
 
 .response-form {
   margin-top: 10px;
-}
+}*/
 /*fim forum */
+
+/*forum2 */
+
+.response-form {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  
+  gap: 10px; /* Espaçamento entre o input e o botão */
+}
+.response {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+.response-form input[type="text"] {
+  flex: 1; /* O input ocupa o espaço disponível */
+  max-width: 90%; /* Define um limite de largura para o input */
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.response-form button {
+  padding: 10px 14px;
+  font-size: 14px;
+  background: #5cb85c;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.response-form button:hover {
+  background: #4cae4c;
+}
+
+/*fim forum2 */
 
 
 /*inicio pesquisa */
@@ -976,3 +1017,4 @@ margin-top: 200px;
   padding: 8px;
   color: white;
 }
+
