@@ -28,6 +28,7 @@ def before_request():
     g.nome = session.get("nome", None)
     g.email = session.get("email", None)
     g.cpf_cnpj = session.get("cpf_cnpj", None)
+    g.cartao_sus = session.get("cartao_sus", None)
 
 
 @app.route("/")
