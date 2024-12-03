@@ -17,9 +17,9 @@
     <a href="{{ url_for('index') }}">
       <img src="{{ url_for('static', filename='img/logo_conecta.png' )}}" class="logo_principal"/>
     </a>
-    <a href="{{ url_for('index') }}" class="titulo">
-    <!--  <h1 class="titulo_principal">SUS+ Conecta</h1>-->
-    </a>
+   <!--  <a href="{{ url_for('index') }}" class="titulo">
+     <h1 class="titulo_principal">SUS+ Conecta</h1>
+    </a>-->
     <form id="search-form" action="{{ url_for('pesquisar') }}" method="post">
       <input type="search" id="search-input" name="search-input" placeholder="Pesquisar...">
       <button id="search-button">Pesquisar</button>

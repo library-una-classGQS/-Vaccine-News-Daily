@@ -47,6 +47,12 @@
 
   <h1 class="titulo_noticias">Notícias do dia</h1>
 
+  <div class="noticia_maior" >
+    <a href="#"><h3>Minísterio da Saude discute estratégia para distribuição de vacina contra Dengue</h3></a>
+
+    <a href="#"><img class="img_noticia_maior" src="{{ url_for('static', filename='img/Vacina-Dengue.webp' )}}" /></a>
+</div>
+
  
   <article class="article">
       <img class="img_noticias" src="{{ url_for('static', filename='img/vacina-contra-hpv.jpg' )}}" />
@@ -85,11 +91,7 @@
 </div>
 </article>
 
-  <div class="noticia_maior" >
-    <a href="#"><h3>Minísterio da Saude discute estratégia para distribuição de vacina contra Dengue</h3></a>
-
-    <a href="#"><img class="img_noticia_maior" src="{{ url_for('static', filename='img/Vacina-Dengue.webp' )}}" /></a>
-</div>
+ 
 
 </main>
 {% endblock %}
