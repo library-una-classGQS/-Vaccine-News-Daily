@@ -1023,9 +1023,6 @@ margin-top: 200px;
 
 @media screen and (max-width: 1120px){
 
-}
-@media screen and (max-width: 800px){
-
   header{
     width: 100%;
     max-height: 100px;
@@ -1042,10 +1039,12 @@ margin-top: 200px;
   #search-form{
     display: flex;
     position: relative;
+    left: auto;
     gap: 5px; 
     margin-left: auto;
     margin-top: -10px;
     font-size: 12px;
+    align-items: center;
     
     
     
@@ -1066,14 +1065,23 @@ margin-top: 200px;
   }
 
   .img_login{
-    position: relative;
+    position: absolute;
     margin-left: 90%;
-    margin-top: -20px;
+    margin-top: -90px;
   }
+
+  .menu{
+    margin-top: 20px;
+  }
+
+
+
+
 
   main{
     flex-direction: column-reverse;
     margin: auto;
+    margin-top: 20px;
   }
 
   .slider{
@@ -1115,6 +1123,26 @@ margin-top: 200px;
     margin-left: 20px;
     width: 350px;
   }
+
+/*agendamento de consultas */
+
+.container_agendamento{
+  position: absolute;
+  margin-top: 40px;
+  flex-direction: column;
+}
+
+.container_agendamento h1{
+  font-size: 20px;
+}
+.div_historico{
+  position: relative;
+  margin-left: 90%;
+  width: 50px;
+}
+.historico_consulta{
+  font-size: 16px;
+}
 
 
 
