@@ -1130,21 +1130,47 @@ margin-top: 200px;
   position: absolute;
   margin-top: 40px;
   flex-direction: column;
+  display: flex;
 }
 
-.container_agendamento h1{
+/*.container_agendamento h1{
   font-size: 20px;
+  margin-top: auto;
 }
-.div_historico{
+  */
+
+/*.div_historico{
   position: relative;
   margin-left: 90%;
   width: 50px;
 }
+  */
 .historico_consulta{
   font-size: 16px;
 }
 
 
+.div_historico {
+  position: absolute;
+  left: -200px; /* Remove margem lateral */
+  top: 50px; /* Remove margem superior */
+  margin-bottom: 20px; /* Espaço abaixo do botão */
+  width: auto; /* Ajusta largura ao conteúdo */
+  text-align: center; /* Centraliza o botão */
+  order: -1; /* Move o botão antes do título */
+}
+
+
+.container_agendamento h1 {
+  margin-top: 40px; /* Ajustar margem do título */
+  font-size: 20px;
+}
+
+.container_agendamento{
+  display: flex;
+  flex-direction: column;
+  
+}
 
 
 }
