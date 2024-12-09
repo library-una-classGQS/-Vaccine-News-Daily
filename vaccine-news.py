@@ -148,6 +148,14 @@ def medicos():
     return render_template("medicos.html", titulo="Médicos")
 
 
+@app.route("/senhas")
+def senhas():
+    return render_template("senhas.html", titulo="Senhas")
+
+@app.route("/mostrar_senhas")
+def mostrar_senhas():
+    return render_template("mostrar_senhas.html", titulo="mostrar Senhas")
+
 @app.route("/login")
 def login():
     return render_template("login.html")

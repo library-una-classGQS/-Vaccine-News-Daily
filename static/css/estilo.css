@@ -1019,12 +1019,139 @@ margin-top: 200px;
   color: white;
 }
 
+/*chamada de senhas */
 
+.container_senhas {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 800px;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+.container_senhas h1 {
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.display {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.display_mostrar_senha{
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 400px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.display_mostrar_senha h2{
+  font-size: 10.5em;
+
+}
+#current-password {
+  font-size: 2rem;
+  color: #333;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn.reset {
+  background-color: #f44336;
+}
+
+.btn.reset:hover {
+  background-color: #e53935;
+}
+
+.logo_senha{
+  position: absolute;
+  left: 0;
+  width: 140px;
+}
+.queue {
+  position: absolute;
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 60%;
+  margin-top: -380px;
+}
+
+.queue ul {
+  list-style: none;
+  padding: 0;
+}
+
+.queue li {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#current-password-history{
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #4CAF50;
+}
+#current-password-history2{
+  font-size: 10.5em;
+  margin: 10px 0;
+  color: #4CAF50;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 5px 0;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.container_mostrar_senhas{
+  text-align: center;
+  width: 100%;
+}
+
+
+
+/* fim chamado de enhas*/
 
 /* fazer responsivo */
 
 @media screen and (max-width: 1120px){
 
+  *{
+    align-items: center;
+  }
   header{
     width: 100%;
     max-height: 100px;
@@ -1074,6 +1201,7 @@ margin-top: 200px;
 
   .menu{
     margin-top: 20px;
+    left: 0;
   }
 
 
@@ -1197,6 +1325,8 @@ margin-top: 200px;
   width: 80%;
 
 }
+
+
 
 
 

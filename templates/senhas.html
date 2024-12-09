@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{%block conteudo_body  %}
+
+<div class="container_senhas">
+    <h1 >Chamada de Senhas</h1>
+    <div class="display">
+        <p>Senha Atual:</p>
+        <h2 id="current-password">-</h2>
+    </div>
+    <button id="call-next" class="btn">Chamar Próxima Senha</button>
+    <button id="reset" class="btn reset">Reiniciar Senhas</button>
+    <a href="{{ url_for('mostrar_senhas') }}" class="btn history">Ver Histórico</a>
+
+    <div class="queue">
+        <h3>Senhas na Fila:</h3>
+        <ul id="queue-list"></ul>
+    </div>
+</div>
+
+<script src="../static/js/senhas.js"></script>
+
+{% endblock %}

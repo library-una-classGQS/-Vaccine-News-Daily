@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Senhas</title>
+    <link rel="stylesheet" href="../static/css/estilo.css">
+</head>
+<body>
+    <div class="container_mostrar_senhas">
+        <img src="{{ url_for('static', filename='img/logo_conecta.png' )}}" class="logo_senha"/>
+        <h1 >Senhas</h1>
+        <div class="display_mostrar_senha">
+            <p>Senha Atual:</p>
+            <h2 id="current-password-history2">-</h2>
+        </div>
+        <h3>Últimas 5 Senhas:</h3>
+        <ul id="last-passwords"></ul>
+        <a href="{{ url_for('senhas') }}" class="btn">Voltar</a>
+    </div>
+
+    <script src="../static/js/mostrar_senhas.js"></script>
+</body>
+</html>
