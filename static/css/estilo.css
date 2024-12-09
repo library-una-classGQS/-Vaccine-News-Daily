@@ -791,73 +791,6 @@ h1 {
 /* fim div dos creditos*/
 
 /*forum */
-/*
-.container_forum {
-  max-width: 1300px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.container_forum  h1 {
-  text-align: center;
-  color: #333;
-}
-
-.post-forum, .posts {
-  margin-top: 20px;
-}
-
-.post-forum input[type="text"], .post-forum input[type="file"], .response-forum input[type="text"] {
-  width: calc(100% - 22px);
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.post-forum button, .response-form button {
-  padding: 10px 15px;
-  background: #5cb85c;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-.post-form button:hover, .response-form button:hover {
-  background: #4cae4c;
-}
-
-.post {
-  background: #f9f9f9;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-}
-
-.post img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
-}
-
-.response {
-  background: #f9f9f9;
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-}
-
-.responses {
-  margin-top: 10px;
-}
-
-.response-form {
-  margin-top: 10px;
-}*/
-/*fim forum */
-
-/*forum2 */
-
 .response-form {
   margin-top: 10px;
   display: flex;
@@ -895,7 +828,7 @@ h1 {
   background: #4cae4c;
 }
 
-/*fim forum2 */
+/*fim forum */
 
 
 /*inicio pesquisa */
@@ -1051,7 +984,7 @@ margin-top: 200px;
   margin-top: 5px;
   margin-bottom: 20px;
   border-radius: 5px;
-  height: 400px;
+  height: 360px;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .display_mostrar_senha h2{
@@ -1110,31 +1043,6 @@ margin-top: 200px;
   font-size: 14px;
 }
 
-#current-password-history{
-  font-size: 2.5em;
-  margin: 10px 0;
-  color: #4CAF50;
-}
-#current-password-history2{
-  font-size: 10.5em;
-  margin: 10px 0;
-  color: #4CAF50;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul li {
-  margin: 5px 0;
-  padding: 10px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-}
 
 .container_mostrar_senhas{
   text-align: center;

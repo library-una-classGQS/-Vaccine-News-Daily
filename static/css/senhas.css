@@ -1,0 +1,30 @@
+
+/*chamada de senhas */
+
+#current-password-history{
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #4CAF50;
+  }
+  #current-password-history2{
+    font-size: 10.5em;
+    margin: 10px 0;
+    color: #4CAF50;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 22px;
+  }
+  
+  /* fim chamado de enhas*/

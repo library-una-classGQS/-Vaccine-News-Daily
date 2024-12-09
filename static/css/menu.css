@@ -14,7 +14,7 @@ body{
     font-family: arial;
 }
 
-ul{
+.ul_menu{
     list-style: none;
 }
 
@@ -43,7 +43,7 @@ input[type="checkbox"]:checked ~nav{
     transform: translateX(200px); 
 }
 
-ul{
+.ul_menu{
     top: 110px;
     position: absolute;
     width: 100%;
@@ -90,7 +90,7 @@ ul{
     margin-top: 275px;
 }
 
-li:hover .submenu {
+.li_menu:hover .submenu {
     display: block;
 }
 
@@ -106,34 +106,6 @@ li:hover .submenu {
     color: white;
 }
 
-
-
-
-/*
-
-nav {
-    background-color: #90ee90;
-    width: 200px;
-    position: absolute;
-    left: -200px;
-    transition: left .5s;
-    z-index: 2;
-    top: 60px;
-}
-
-nav.show {
-    left: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    position: relative;
-}
-*/
 .submenu {
     display: none;
     position: absolute;
