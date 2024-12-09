@@ -1019,6 +1019,8 @@ margin-top: 200px;
   color: white;
 }
 
+
+
 /* fazer responsivo */
 
 @media screen and (max-width: 1120px){
@@ -1133,18 +1135,7 @@ margin-top: 200px;
   display: flex;
 }
 
-/*.container_agendamento h1{
-  font-size: 20px;
-  margin-top: auto;
-}
-  */
 
-/*.div_historico{
-  position: relative;
-  margin-left: 90%;
-  width: 50px;
-}
-  */
 .historico_consulta{
   font-size: 16px;
 }
@@ -1152,17 +1143,17 @@ margin-top: 200px;
 
 .div_historico {
   position: absolute;
-  left: -200px; /* Remove margem lateral */
-  top: 50px; /* Remove margem superior */
-  margin-bottom: 20px; /* Espaço abaixo do botão */
-  width: auto; /* Ajusta largura ao conteúdo */
-  text-align: center; /* Centraliza o botão */
-  order: -1; /* Move o botão antes do título */
+  left: -200px; 
+  top: 50px; 
+  margin-bottom: 20px; 
+  width: auto; 
+  text-align: center; 
+  order: -1; 
 }
 
 
 .container_agendamento h1 {
-  margin-top: 40px; /* Ajustar margem do título */
+  margin-top: 40px; 
   font-size: 20px;
 }
 
@@ -1171,6 +1162,42 @@ margin-top: 200px;
   flex-direction: column;
   
 }
+
+/* pagina atendimento */
+
+.main_atendimento{
+  margin-top: 60px;
+}
+
+.arquivo_atendimento{
+  position: absolute;
+  margin-top: 60px;
+  margin-left: -335px;
+}
+
+#btn_receita{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: -335px;
+}
+
+#btn_atestado{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: -235px;
+}
+
+/*forum */
+
+.container_forum{
+  margin-top: 60px;
+
+}
+.response-form input[type="text"]{
+  width: 80%;
+
+}
+
 
 
 }

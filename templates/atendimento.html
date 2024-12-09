@@ -1,7 +1,7 @@
 {% extends "template.html" %}
 {%block conteudo_body  %}
 
-<main>
+<main class="main_atendimento">
     <h1 class="title_atendimento">Atendimento online</h1>
 
     <div id="video-container">
@@ -10,7 +10,7 @@
       </div>
       <button id="startButton">Iniciar Chamada</button>
       <button id="hangupButton" disabled>Encerrar Chamada</button>
-      <input type="file" id="imageInput" accept="image/*">
+      <input class="arquivo_atendimento" type="file" id="imageInput" accept="image/*">
       <button class="gerador_medico" id="btn_receita">Receita</button>
       <button class="gerador_medico" id="btn_atestado">Atestado</button>
       
