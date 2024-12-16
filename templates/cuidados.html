@@ -1,25 +1,25 @@
 {% extends "template.html" %}
 {% block conteudo_body %}
-<main>
+<main class="main_cuidados">
 
-    <h1>Prevenção de doenças que exigem a vacinação</h1>
+    <h1 class="titulo_cuidados">Prevenção de doenças que exigem a vacinação</h1>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jKGda3zw3m4?si=xhHKXyLXOVy8eZEC"
+    <iframe class ="iframe_video_cuidados" width="560" height="315" src="https://www.youtube.com/embed/jKGda3zw3m4?si=xhHKXyLXOVy8eZEC"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <div class="container">
+        <div class="container" id="container_cuidados">
             <h1>Gostou do conteudo e deseja baixar um arquivo PDF sobre os cuidados diários para manter a saúde?</h1>
             <a href="../static/img/cuidados.pdf" download="meu-arquivo.pdf" class="download-button">Baixar PDF</a>
         </div>
 
     <div class="faq-container">
-        <h1>Perguntas Frequentes sobre Vacinas</h1>
+        <h1 >Perguntas Frequentes sobre Vacinas</h1>
         <div class="faq-item">
             <button class="faq-question">As vacinas são seguras?</button>
             <div class="faq-answer">
-                <p>As vacinas são submetidas a rigorosos testes clínicos para garantir sua segurança e eficácia antes de
+                <p >As vacinas são submetidas a rigorosos testes clínicos para garantir sua segurança e eficácia antes de
                     serem aprovadas pelas autoridades de saúde, como a Organização Mundial da Saúde (OMS) e a Agência
                     Nacional de Vigilância Sanitária (ANVISA). Após a aprovação, elas continuam sendo monitoradas para
                     detectar qualquer evento adverso raro. Embora algumas pessoas possam experimentar efeitos colaterais
@@ -27,9 +27,9 @@
                     graves superam amplamente esses riscos.</p>
             </div>
         </div>
-        <div class="faq-item">
+        <div class="faq-item" >
             <button class="faq-question">Qual é a eficácia das vacinas?</button>
-            <div class="faq-answer">
+            <div class="faq-answer" >
                 <p>A eficácia das vacinas pode variar dependendo da doença que estão destinadas a prevenir, da saúde do
                     indivíduo e de outros fatores. Em geral, as vacinas são altamente eficazes em prevenir doenças. Por
                     exemplo, as vacinas contra o sarampo, a caxumba e a rubéola (tríplice viral) têm uma eficácia

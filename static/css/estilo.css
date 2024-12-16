@@ -675,7 +675,7 @@ h1 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   position: relative;
-  height: 320px;
+  max-height: 400px;
 }
 
 .faq-answer ul{
@@ -1062,7 +1062,7 @@ margin-top: 200px;
   }
   header{
     width: 100%;
-    max-height: 100px;
+    max-height: 105px;
     flex-direction: column;
     align-items: center;
   }
@@ -1070,7 +1070,8 @@ margin-top: 200px;
 
   .logo_principal{
     position: relative;
-    width: 140px;
+    width: 100px;
+    top: 5px;
   }
 
   #search-form{
@@ -1079,7 +1080,7 @@ margin-top: 200px;
     left: auto;
     gap: 5px; 
     margin-left: auto;
-    margin-top: -10px;
+    margin-top: -5px;
     font-size: 12px;
     align-items: center;
     
@@ -1103,12 +1104,12 @@ margin-top: 200px;
 
   .img_login{
     position: absolute;
-    margin-left: 90%;
-    margin-top: -90px;
+    margin-left: 80%;
+    margin-top: -85px;
   }
 
   .menu{
-    margin-top: 20px;
+    margin-top: 10px;
     left: 0;
   }
 
@@ -1135,31 +1136,38 @@ margin-top: 200px;
   }
 
   .img_noticia_maior{
-
-    max-width: 350px;
+    max-width: 450px;
   }
 
   .article{
     flex-direction: column;
     position: relative;
+    margin-left: -80px;
 
   }
 
+ 
+
   .txt_noticias {
-    width: 200px;
+    width: 350px;
     margin-top: auto;
   }
 
   .txt_noticias_g{
     margin-top: auto;
-    width: 200px;
+    width: 350px;
 
   }
 
   .noticia_maior{
     position: relative;
-    margin-left: 20px;
+    margin-left: 0;
+    width: 400px;
+  }
+
+  .img_noticias{
     width: 350px;
+    height: 200px;
   }
 
 /*agendamento de consultas */
@@ -1234,8 +1242,107 @@ margin-top: 200px;
 
 }
 
+.queue{
+  width: 100%;
+  top: 880px;
+  text-align: center;
+  margin-left: 0;
+
+}
+
+.queue-list{
+  list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.queue-list li{
+
+  margin: 5px 0;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+.container_senhas{
+  max-width: 100%;
+  margin-left: 0;
+}
+
+
+.page_contato{
+  max-width: 100%;
+  margin-top: 60px;
+  left: 0;
+}
+
+.h2_email{
+  margin-left: 40px;
+  position: relative;
+  
+}
+
+.email-div{
+  max-width: 100%;
+  position: relative;
+  margin-left: 0;
+}
+
+.main_cuidados{
+  max-width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.titulo_cuidados{
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.iframe_video_cuidados{
+  max-width: 100%;
+}
+
+.container{
+  position: relative;
+  max-width: 100%;
+  flex-direction: column;
+  margin-top: 30px;
+  display: flex;
+  margin-left: 0;
+}
+
+.container h1{
+  font-size: 20px;
+}
+
+.faq-container{
+  margin-top: 10px;
+}
+
+.faq-container h1{
+  font-size: 20px;
+}
+
+.faq-answer {
+  position: relative;
+  max-height: 800px;
+}
+
+.faq-answerul{
+  max-height: 3000px;
+}
+
+.main_pagina_inicial{
+  max-width: 100%;
+  align-items: center;
+}
 
 
 
 
 }
+
