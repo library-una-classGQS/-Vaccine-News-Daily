@@ -1170,177 +1170,198 @@ margin-top: 200px;
     height: 200px;
   }
 
-/*agendamento de consultas */
+  /*agendamento de consultas */
 
-.container_agendamento{
-  position: absolute;
-  margin-top: 40px;
-  flex-direction: column;
-  display: flex;
-}
-
-
-.historico_consulta{
-  font-size: 16px;
-}
+  .container_agendamento{
+    position: absolute;
+    margin-top: 40px;
+    flex-direction: column;
+    display: flex;
+  }
 
 
-.div_historico {
-  position: absolute;
-  left: -200px; 
-  top: 50px; 
-  margin-bottom: 20px; 
-  width: auto; 
-  text-align: center; 
-  order: -1; 
-}
+  .historico_consulta{
+    font-size: 16px;
+  }
 
 
-.container_agendamento h1 {
-  margin-top: 40px; 
-  font-size: 20px;
-}
+  .div_historico {
+    position: absolute;
+    left: -200px; 
+    top: 50px; 
+    margin-bottom: 20px; 
+    width: auto; 
+    text-align: center; 
+    order: -1; 
+  }
 
-.container_agendamento{
-  display: flex;
-  flex-direction: column;
+
+  .container_agendamento h1 {
+    margin-top: 40px; 
+    font-size: 20px;
+  }
+
+  .container_agendamento{
+    display: flex;
+    flex-direction: column;
   
-}
+  }
 
-/* pagina atendimento */
+  /* pagina atendimento */
 
-.main_atendimento{
-  margin-top: 60px;
-}
+  .main_atendimento{
+    margin-top: 60px; 
+  }
 
-.arquivo_atendimento{
-  position: absolute;
-  margin-top: 60px;
-  margin-left: -335px;
-}
+  .arquivo_atendimento{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -335px;
+  }
 
-#btn_receita{
-  position: absolute;
-  margin-top: 100px;
-  margin-left: -335px;
-}
+  #btn_receita{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -335px;
+  }
 
-#btn_atestado{
-  position: absolute;
-  margin-top: 100px;
-  margin-left: -235px;
-}
+  #btn_atestado{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -235px;
+  }
 
-/*forum */
+  /*forum */
 
-.container_forum{
-  margin-top: 60px;
+  .container_forum{
+    margin-top: 60px;
 
-}
-.response-form input[type="text"]{
-  width: 80%;
+  }
+  
+  .response-form input[type="text"]{
+    width: 80%;
 
-}
+  }
 
-.queue{
-  width: 100%;
-  top: 880px;
-  text-align: center;
-  margin-left: 0;
+  .queue{
+    width: 100%;
+    top: 880px;
+    text-align: center;
+    margin-left: 0;
 
-}
+  }
 
-.queue-list{
-  list-style: none;
+  .queue-list{
+    list-style: none;
     padding: 0;
     margin: 0;
-}
+  }
 
-.queue-list li{
+  .queue-list li{
 
-  margin: 5px 0;
-  padding: 10px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 22px;
-}
+    margin: 5px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 22px;
+  }
 
-.container_senhas{
-  max-width: 100%;
-  margin-left: 0;
-}
+  .container_senhas{
+    max-width: 100%;
+    margin-left: 0;
+  }
 
 
-.page_contato{
-  max-width: 100%;
-  margin-top: 60px;
-  left: 0;
-}
+  .page_contato{
+   max-width: 100%;
+   margin-top: 60px;
+   left: 0;
+  }
 
-.h2_email{
-  margin-left: 40px;
-  position: relative;
+  .h2_email{
+    margin-left: 40px;
+    position: relative;
   
-}
+  }
 
-.email-div{
+  .email-div{
   max-width: 100%;
   position: relative;
   margin-left: 0;
 }
 
-.main_cuidados{
-  max-width: 100%;
-  flex-direction: column;
-  display: flex;
-}
+  .main_cuidados{
+   max-width: 100%;
+   flex-direction: column;
+   display: flex;
+  }
 
-.titulo_cuidados{
+  .titulo_cuidados{
   font-size: 20px;
   margin-top: 40px;
   text-align: center;
-}
+  }
 
-.iframe_video_cuidados{
-  max-width: 100%;
-}
+  .iframe_video_cuidados{
+    max-width: 100%;
+  }
 
-.container{
-  position: relative;
-  max-width: 100%;
-  flex-direction: column;
-  margin-top: 30px;
-  display: flex;
-  margin-left: 0;
-}
+  .container{
+    position: relative;
+    max-width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 0;
+  }
 
-.container h1{
-  font-size: 20px;
-}
+  .container h1{
+    font-size: 20px;
+  }
 
-.faq-container{
-  margin-top: 10px;
-}
+  .faq-container{
+    margin-top: 10px;
+  }
 
-.faq-container h1{
-  font-size: 20px;
-}
+  .faq-container h1{
+    font-size: 20px;
+  }
 
-.faq-answer {
-  position: relative;
-  max-height: 800px;
-}
+  .faq-answer {
+    position: relative;
+    max-height: 800px;
+  }
 
-.faq-answerul{
-  max-height: 3000px;
-}
+  .faq-answerul{
+    max-height: 3000px;
+  }
 
-.main_pagina_inicial{
-  max-width: 100%;
-  align-items: center;
-}
+  .main_pagina_inicial{
+    max-width: 100%;
+    align-items: center;
+  }
 
+  #startButton{
+    position: relative;
+    left: -30px;
+  }
+  #hangupButton{
+    position: relative;
+    margin-left: 150px;
+    top: -47px;
+  }
+
+
+  .arquivo_atendimento{
+    position: absolute;
+    left: 380px;
+  }
+
+  .gerador_medico{
+    position: relative;
+    left: 400px;
+  }
 
 
 
