@@ -1342,6 +1342,8 @@ margin-top: 200px;
     align-items: center;
   }
 
+  /* pagina de atendimento */
+
   #startButton{
     position: relative;
     left: -30px;
@@ -1362,6 +1364,21 @@ margin-top: 200px;
     position: relative;
     left: 400px;
   }
+
+  #form_atestado, #form-receita{
+    margin-top: 120px;
+  }
+
+  /* fim pagina de atendimento */
+
+    /* forum*/
+    .post-forum h2{
+      margin-left: 0;
+    }
+
+
+
+     /* fim forum*/
 
 
 
