@@ -13,7 +13,6 @@ path = os.path.dirname(os.path.abspath(__file__))
 
 
 def login_required(f):
-    @wraps(f)
     def decorated_function(*args, **kwargs):
         if not session.get("usuario_logado"):
             return redirect(url_for("login"))
